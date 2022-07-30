@@ -1,4 +1,14 @@
 import styled from "styled-components";
+export const Header = styled.header`
+background-color: #F3F4F6;
+margin-top: 30px;
+margin-left: 30px;
+margin-right: 37px;
+border-radius: 4px;
+margin-bottom: 81px;
+height: 838px;
+
+`
 
 export const Title = styled.h1`
 width: 653px;
@@ -55,6 +65,7 @@ border-radius: 200px; //
 
 
 `
+
 
 
 export const Box = styled.div`

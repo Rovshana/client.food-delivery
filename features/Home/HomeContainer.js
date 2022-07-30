@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from '../../shared/components/Cards/Cards'
 import HomeFirst from '../../shared/components/HomeComponent/HomeFirst'
 
 import Menu from '../../shared/components/Menu/Menu'
@@ -9,9 +10,8 @@ import Menu from '../../shared/components/Menu/Menu'
 
     return (
         <>
-       <h3>Navbar will come there :)</h3>
         <HomeFirst/>
-
+        <Cards/>
         <Menu />
         
       
