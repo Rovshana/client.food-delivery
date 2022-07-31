@@ -1,11 +1,12 @@
 import React from "react";
-import { ContentMenu, ParentDiv, Title, PhotoDiv } from "./Menu.styled";
+import { ContentMenu, ParentDiv, Title, PhotoDiv, ContentDiv, Box } from "./Menu.styled";
+import Image from 'next/Image'
 
 function Menu(props) {
   return (
-    <>
+    <Box>
       <ParentDiv>
-        <div>
+        <ContentDiv>
           <Title>Menu That Always Make You Fall In Love</Title>
           <ContentMenu>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
@@ -14,16 +15,16 @@ function Menu(props) {
             graphic, print, and publishing industries for previewing layouts and
             visual mockups.
           </ContentMenu>
-        </div>
+        </ContentDiv>
         <PhotoDiv>
-          <img src="/menu1.svg" alt=".." />
+          <Image width={413} height={530} src="/menu1.svg" alt=".."  />
         </PhotoDiv>
       </ParentDiv>
       <ParentDiv>
         <PhotoDiv>
-          <img src="/menu2.svg" alt=".." />
+          <Image width={413} height={530} src="/menu2.svg" alt=".." />
         </PhotoDiv>
-        <div>
+        <ContentDiv>
           <Title>Yummy Always Papa John’s Pizza.Agree?</Title>
           <ContentMenu>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
@@ -32,10 +33,10 @@ function Menu(props) {
             graphic, print, and publishing industries for previewing layouts and
             visual mockups.
           </ContentMenu>
-        </div>
+        </ContentDiv>
       </ParentDiv>
       <ParentDiv>
-        <div>
+        <ContentDiv>
           <Title>Do You Like French Fries? Mmm...</Title>
           <ContentMenu>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
@@ -44,12 +45,12 @@ function Menu(props) {
             graphic, print, and publishing industries for previewing layouts and
             visual mockups.
           </ContentMenu>
-        </div>
+        </ContentDiv>
         <PhotoDiv>
-          <img src="/menu3.svg" alt=".." />
+          <Image width={413} height={530} src="/menu3.svg" alt=".." />
         </PhotoDiv>
       </ParentDiv>
-    </>
+    </Box>
   );
 }
 

@@ -5,14 +5,15 @@ import { ChildBox, Para, Title, ImageHolder, CardTitle, CardP, ParentDiv } from 
  function Cards(props) {
     
 
+
     return (
         <div className='container '>
             <div>
                 <Title>Features</Title>
                 <Para>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Para>
             </div>
-            <ParentDiv>
-            <ChildBox>
+            <ParentDiv className='row'>
+            <ChildBox className='col-xs-12 col-sm-12 col-md-12'>
             
             <div>
                 <ImageHolder>
@@ -26,7 +27,7 @@ import { ChildBox, Para, Title, ImageHolder, CardTitle, CardP, ParentDiv } from 
 
             </ChildBox>
             {/* second */}
-            <ChildBox>
+            <ChildBox className='col-xs-12 col-sm-12 col-md-12'>
             
             <div>
                 <ImageHolder>
@@ -40,7 +41,7 @@ import { ChildBox, Para, Title, ImageHolder, CardTitle, CardP, ParentDiv } from 
 
             </ChildBox>
             {/* third */}
-            <ChildBox>
+            <ChildBox className='col-xs-12 col-sm-12 col-md-12-bg-dark'>
             
             
             <div>

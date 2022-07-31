@@ -11,6 +11,12 @@ letter-spacing: 0.03em;
 
 
 `
+export const ContentDiv = styled.div`
+width: 60%;
+height: 530px;
+margin-right: 80px;
+
+`
 export const ContentMenu = styled.p`
 
 font-style: normal;
@@ -24,14 +30,22 @@ margin-left: 111px;
 
 
 `
+export const Box = styled.div`
+margin-top: 281px;
+margin-bottom: 200px;
+`
 export const ParentDiv =  styled.div`
 display: flex;
 align-items: center;
+margin-bottom: 100px;
+
 `
 
 export const PhotoDiv = styled.div`
-margin-top: 200px;
-width: 50%;
+/* margin-top: 200px; */
+width: 40%;
+/* border: 1px solid orange; */
+
 
 
 `
