@@ -1,6 +1,6 @@
 import React from "react";
 import { ContentMenu, ParentDiv, Title, PhotoDiv, ContentDiv, Box } from "./Menu.styled";
-import Image from 'next/Image'
+import Image from "next/image";
 
 function Menu(props) {
   return (
@@ -47,7 +47,7 @@ function Menu(props) {
           </ContentMenu>
         </ContentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu3.svg" alt=".." />
+          <Image width={413} height={530} src="/menu3.svg" alt=".."  className="photo"/>
         </PhotoDiv>
       </ParentDiv>
     </Box>

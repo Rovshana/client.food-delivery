@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterBox, FooterContainer, FooterP, List, PTag } from './footer.styled'
+import { FooterBox, FooterContainer, FooterIcons, FooterP, List, PTag } from './footer.styled'
 
  function Footer(props) {
     
@@ -10,17 +10,17 @@ import { FooterBox, FooterContainer, FooterP, List, PTag } from './footer.styled
             <div>
                 <img src="./foody.svg" alt='..'/>
                 <FooterP>Lorem ipsum is placeholder text commonly used in the graphic, </FooterP>
-                <div>
+                <FooterIcons>
                     <img src='/facebook.svg' alt='.'/>
                     <img src='/insta.svg' alt='.'/>
                     <img src='/twitter.svg' alt='.'/>
-                </div>
+                </FooterIcons>
                 
 
             </div>
     
             <ul>
-            <List>Popular</List>
+            <List className='footerUl'>Popular</List>
             <List>Fast food</List>
             <List>Sea foods</List>
             <List>Soup</List>

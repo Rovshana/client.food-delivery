@@ -18,7 +18,7 @@ import { Title, Content, Button1, Button2, ImageKeeper, Box, Header} from './Hom
             </div>
             
             < ImageKeeper>
-                {/* <img src="assets/burger.svg"alt=".."/>  */}
+                
                 
             </ ImageKeeper>
             

@@ -25,25 +25,31 @@ text-align: center;
 width: 780px;
 height: 105px;
 
+
 `
 export const ChildBox = styled.div`
-width: 327px;
+ width: 327px;
 height: 386px;
-left: 128px;
-/* Boxbox-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 filter: blur(4px); */
 color: #FFFFFF;
 
 `
 export const ImageHolder = styled.div`
-margin-left: 62px;
-margin-right: 26px;
-
+width: 241px;
+height: 223px;
+object-fit: cover;
+margin: 0 auto;
+ & img{
+    width: 100%;
+    height: 100%;
+    display: block;
+ }
 `
 
 export const CardTitle = styled.h3`
-margin-left: 23px;
-margin-right: 23px;
+text-align: center;
 font-weight: 700;
 font-size: 30px;
 line-height: 70px;
@@ -51,12 +57,12 @@ color: #4F4F4F;
 `
 
 export const CardP = styled.p`
+text-align: center;
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
 color: #828282;
-margin-left: 31px;
-margin-right: 23px;
+
 margin-bottom: 29px;
 `
 

@@ -4,7 +4,16 @@ export const FooterBox = styled.footer`
 width: 100%;
  height: 385px;
  background: #181617;
- 
+ @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+       width: 100%;
+       height: 424px;
+       
+
+      
+    
+    }
+
 
 `
 export const FooterContainer = styled.div`
@@ -16,13 +25,42 @@ position:relative;
 
 transform: translate( -50% -50%);
 height: 360px;
+@media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+
+      
+    
+    }
 `
+
+export const FooterIcons = styled.div`
+/* display: flex ; */
+& img{
+    display: inline-block;
+    
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+}
+`
+
 export const List = styled.li`
 font-weight: 400;
 font-size: 13px;
  line-height: 25.5px;
  color: #828282;
  list-style: none;
+ @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+       display: none;
+
+      
+    
+    }
 
  :nth-child(1){
     font-family: 'Montserrat';
@@ -41,6 +79,14 @@ font-size: 14px;
 color: #828282;
 margin: 0 auto !important;
 text-align: center;
+@media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+    
+        margin: 0 auto !important;
+
+      
+    
+    }
 
 `
 
