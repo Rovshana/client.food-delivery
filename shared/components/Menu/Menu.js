@@ -47,7 +47,7 @@ function Menu(props) {
           </ContentMenu>
         </ContentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu/menu3.svg" alt=".."/>
+          <Image width={413} height={530} src="/menu/menu3.svg" alt=".." className="imgMedia"/>
         </PhotoDiv>
       </ParentDiv>
     </Box>

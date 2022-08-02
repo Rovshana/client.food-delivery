@@ -107,3 +107,70 @@ font-size: 22px;
 line-height: 30px;
 color: #828282;
 `
+
+// footer top's style is here 
+export const Box = styled.div`
+display: flex;
+justify-content: space-between;
+position:relative;
+
+transform: translate( -50% -50%);
+height: 370px;
+align-items: center;
+
+
+`
+export const Button = styled.button`
+width: 220px;
+height: 60px;
+background: #FB9300;
+border-radius: 30px;
+border: none;
+margin: 0 auto;
+// 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+margin-top: 43px;
+
+`
+
+export const Title = styled.h2`
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 70px;
+color: #ffff;
+width: 550px;
+height: 120px;
+text-align: center;
+
+`
+
+export const FirstDiv = styled.div`
+margin-top: 96px;
+margin-left: 51px;
+margin-bottom: 73px;
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    display: none;
+    
+}
+
+
+`
+
+export const SecondDiv = styled.div`
+margin-top: 100px;
+margin-right: 41px;
+margin-bottom: 62px;
+@media screen  and (min-width: 320px)and (max-width: 576px){
+    display: none;
+    
+}
+
+
+`

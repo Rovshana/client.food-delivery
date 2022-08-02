@@ -3,3 +3,11 @@ margin: 0 auto;
 object-fit: cover;
 transform: translate(-9%,-9%)
 }
+
+/* class for menu cards  */
+@media screen and (min-width: 320px)and(max-width: 576px) {
+    .imgMedia {
+        width: 226.81px;
+    height: 222.17px;
+    } 
+}

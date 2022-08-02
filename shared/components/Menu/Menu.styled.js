@@ -45,7 +45,7 @@ export const ContentDiv = styled.div`
   margin-right: 80px;
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     width: 30%;
-    height: 0;
+    height: 250px;
     margin: 20px auto;
   }
 `;
@@ -59,17 +59,15 @@ export const ContentMenu = styled.p`
   margin-top: 30px;
   margin-left: 111px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen  and (min-width: 320px)and (max-width: 576px) {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 23px;
     text-align: center;
     margin: 0 auto;
     width: 291px;
-
-    background-color: yellow;
   }
 `;
 export const Box = styled.div`
@@ -80,7 +78,7 @@ export const ParentDiv = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 100px;
-  @media only screen and (max-width: 768px) {
+  @media  screen and (min-width: 320px)and (max-width: 576px) {
     flex-direction: column;
     :nth-child(2) {
       flex-direction: column-reverse;
@@ -92,8 +90,8 @@ export const PhotoDiv = styled.div`
   /* margin-top: 200px; */
   width: 40%;
   /* border: 1px solid orange; */
-  @media only screen and (max-width: 768px) {
+  @media screen and (min-width: 320px)and (max-width: 576px) {
     /* For mobile phones: */
     width: 20%;
   }
-`;
+`
