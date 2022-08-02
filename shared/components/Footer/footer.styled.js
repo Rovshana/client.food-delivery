@@ -5,6 +5,7 @@ width: 100%;
 position: relative;
  height: 385px;
  background: #181617;
+ /* margin-top: 300px; */
  @media only screen and (min-width: 320px) and(max-width: 576px) {
         /* For mobile phones: */
        width: 100%;
@@ -135,6 +136,16 @@ font-size: 20px;
 line-height: 24px;
 color: #FFFFFF;
 margin-top: 43px;
+@media screen and (min-width: 320px)  and (max-width: 576px){
+    width: 115.7px;
+height: 40.06px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+    
+}
 
 `
 
@@ -148,6 +159,17 @@ color: #ffff;
 width: 550px;
 height: 120px;
 text-align: center;
+@media screen and (min-width: 320px) and (max-width: 576px){
+    width: 200px;
+height: 60px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 31px;
+text-align: center;
+}
 
 `
 
