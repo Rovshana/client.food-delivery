@@ -7,7 +7,7 @@ export function Error(props) {
         <>
    
         <Center className='container'>
-            <img src='/error.svg' alt='.'/>
+            <img src='/errorpage/error.svg' alt='.'/>
         </Center>
             
         </>

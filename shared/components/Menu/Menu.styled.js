@@ -82,6 +82,7 @@ margin-bottom: 100px;
     :nth-child(2){
         flex-direction: column-reverse;
     }
+    
 }
 `
 
@@ -92,6 +93,8 @@ width: 40%;
 @media only screen and (max-width: 768px) {
         /* For mobile phones: */
        width: 20%;
+       
+    
     
      
     

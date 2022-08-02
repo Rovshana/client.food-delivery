@@ -8,12 +8,12 @@ import { FooterBox, FooterContainer, FooterIcons, FooterP, List, PTag } from './
         <FooterBox>
             <FooterContainer className='container'>
             <div>
-                <img src="./foody.svg" alt='..'/>
+                <img src="/footerIcons/foody.svg" alt='..'/>
                 <FooterP>Lorem ipsum is placeholder text commonly used in the graphic, </FooterP>
                 <FooterIcons>
-                    <img src='/facebook.svg' alt='.'/>
-                    <img src='/insta.svg' alt='.'/>
-                    <img src='/twitter.svg' alt='.'/>
+                    <img src='/footerIcons/facebook.svg' alt='.'/>
+                    <img src='/footerIcons/insta.svg' alt='.'/>
+                    <img src='/footerIcons/twitter.svg' alt='.'/>
                 </FooterIcons>
                 
 

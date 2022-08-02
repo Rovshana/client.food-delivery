@@ -22,7 +22,7 @@ function Cards(props) {
       <ParentDiv className="row">
         <ChildBox className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
           <ImageHolder>
-            <img src="/rovsane/card1.svg" alt="" />
+            <img src="/cards/card1.svg" alt="" />
           </ImageHolder>
           <div>
             <CardTitle>Discount Boucher</CardTitle>
@@ -34,7 +34,7 @@ function Cards(props) {
         {/* second */}
         <ChildBox className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
           <ImageHolder>
-            <img src="/card2.svg" alt="" />
+            <img src="/cards/card2.svg" alt="" />
           </ImageHolder>
           <div>
             <CardTitle>Fresh healthy Food</CardTitle>
@@ -44,9 +44,9 @@ function Cards(props) {
           </div>
         </ChildBox>
         {/* third */}
-        <ChildBox className="col-xs-12 col-sm-12 col-md-12-bg-dark col-lg-4">
+        <ChildBox className="col-xs-12 col-sm-12 col-md-12-bg-dark col-lg-4 ">
           <ImageHolder>
-            <img src="/card3.svg" alt="" />
+            <img src="/cards/card3.svg" alt="" />
           </ImageHolder>
           <div>
             <CardTitle>Fast Home Delivery</CardTitle>

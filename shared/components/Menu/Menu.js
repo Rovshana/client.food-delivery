@@ -17,12 +17,12 @@ function Menu(props) {
           </ContentMenu>
         </ContentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu1.svg" alt=".."  />
+          <Image width={413} height={530} src="/menu/menu1.svg" alt=".."  />
         </PhotoDiv>
       </ParentDiv>
       <ParentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu2.svg" alt=".." />
+          <Image width={413} height={530} src="/menu/menu2.svg" alt=".." />
         </PhotoDiv>
         <ContentDiv>
           <Title>Yummy Always Papa John’s Pizza.Agree?</Title>
@@ -47,7 +47,7 @@ function Menu(props) {
           </ContentMenu>
         </ContentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu3.svg" alt=".."  className="photo"/>
+          <Image width={413} height={530} src="/menu/menu3.svg" alt=".."/>
         </PhotoDiv>
       </ParentDiv>
     </Box>

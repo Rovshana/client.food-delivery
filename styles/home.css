@@ -1,0 +1,5 @@
+.photo{
+margin: 0 auto;
+object-fit: cover;
+transform: translate(-9%,-9%)
+}

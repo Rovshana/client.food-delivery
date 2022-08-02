@@ -7,6 +7,15 @@ margin-right: 37px;
 border-radius: 4px;
 margin-bottom: 81px;
 height: 838px;
+@media only  screen and (max-width: 768px){
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    
+}
 
 `
 
@@ -28,6 +37,10 @@ font-weight: 400;
 font-size: 22px;
 line-height: 30px;
 color: #828282;
+@media  only screen and (max-width: 768px){
+    display: none;
+    
+}
 
 `
 
@@ -54,18 +67,24 @@ font-size: 25px;
 color: #828282;
 `
 export const ImageKeeper = styled.div`
-width: 657px;
-height: 559px; 
+
 border: 1px solid black;
 /* background: url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png); */
+width: 529px;
+height: 476px;
+background: black;
+border-radius: 100px; //
 
-background: url("/burger.svg"),black;
-border-radius: 200px; //
+
 
 
 
 `
-
+export const BoxImg = styled.div`
+ width: 657px;
+height: 559px;
+margin-left: 50px;
+`
 
 
 export const Box = styled.div`

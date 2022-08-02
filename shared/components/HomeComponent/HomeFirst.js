@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, Content, Button1, Button2, ImageKeeper, Box, Header} from './HomeFirst.styled'
+import { Title, Content, Button1, Button2, ImageKeeper, Box, Header, BoxImg} from './HomeFirst.styled'
 
  function HomeFirst(props) {
     
@@ -16,11 +16,12 @@ import { Title, Content, Button1, Button2, ImageKeeper, Box, Header} from './Hom
                 <Button2>Order now</Button2>
             </div>
             </div>
-            
+            <BoxImg>
             < ImageKeeper>
                 
-                
+                <img src="/burger.svg"  alt="." className='photo'/>
             </ ImageKeeper>
+            </BoxImg>
             
         </Box>
             
