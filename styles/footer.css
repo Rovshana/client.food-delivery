@@ -13,8 +13,9 @@
 
     .footer-top{
         position: absolute;
-        top: -20%;
+        top: -70%;
         left: -50%;
+        margin: 0 auto;
         background: #272727;
 border-radius: 50px;
 width: 1066px;

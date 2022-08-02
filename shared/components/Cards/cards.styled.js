@@ -10,6 +10,13 @@ line-height: 70px;
 text-align: center;
 margin: 0 auto;
 color: #181617;
+@media screen and (min-width: 320px) and (max-width: 576px){
+   font-size: 20px;
+   line-height: 31px;
+   width: 235px;
+
+
+}
 
 `
   
@@ -24,6 +31,18 @@ margin: 0 auto;
 text-align: center;
 width: 780px;
 height: 105px;
+@media screen and (min-width: 320px)and (max-width: 576px) {
+   width: 291px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+margin-bottom: 13px;
+
+   
+}
 
 
 `
@@ -54,6 +73,9 @@ font-weight: 700;
 font-size: 30px;
 line-height: 70px;
 color: #4F4F4F;
+@media screen and (min-width: 320px) and (max-width: 576){
+   font-size: 20px;
+}
 `
 
 export const CardP = styled.p`

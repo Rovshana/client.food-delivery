@@ -73,6 +73,7 @@ height: 40px;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+margin-bottom: 12px;
     
 }
 
@@ -107,6 +108,8 @@ border-radius: 100px; //
 @media  only screen and (min-width: 320px) and  (max-width: 576px){
     
     background-color: transparent;
+    width: 271px;
+height: 231px;
 }
 
 
@@ -130,4 +133,21 @@ align-items: center;
     
 }
 
+`
+
+export const  ButtonBox = styled.div`
+@media screen and (min-width: 320px) and (max-width: 576px){
+    display: flex;
+flex-direction: column;
+
+    
+}
+`
+export const Burger = styled.img`
+ @media screen and (min-width: 320px)and(max-width: 576px){
+    width: 271px;
+height: 231px;
+// question number1
+    
+ }
 `
