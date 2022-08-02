@@ -22,7 +22,7 @@ import FooterTop from './FooterTop'
             </div>
     
             <ul>
-            <List className='footerUl'>Popular</List>
+            <List>Popular</List>
             <List>Fast food</List>
             <List>Sea foods</List>
             <List>Soup</List>

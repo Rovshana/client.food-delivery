@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-
+width: 394px;
+height: 68px;
 /* font-family: 'Roboto';
 font-style: normal; */
 font-weight: 900;
 font-size: 40px;
-line-height: 70px;
+line-height: 50px;
 text-align: center;
+margin-bottom: 50px;
 margin: 0 auto;
 color: #181617;
 @media screen and (min-width: 320px) and (max-width: 576px){

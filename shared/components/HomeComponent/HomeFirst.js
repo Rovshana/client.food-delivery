@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar'
 import { Title, Content, Button1, Button2, ImageKeeper, Box, Header, BoxImg, ButtonBox, Burger} from './HomeFirst.styled'
 
  function HomeFirst(props) {
@@ -6,7 +7,7 @@ import { Title, Content, Button1, Button2, ImageKeeper, Box, Header, BoxImg, But
 
     return (
         <Header>
-            <h1>Navbar will come with Matin )</h1>
+            <Navbar/>
         <Box>
             <div>
                 <Title>Our Food site makes it easy to find local food</Title>
