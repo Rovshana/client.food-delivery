@@ -1,11 +1,13 @@
 import React from 'react'
 import { FooterBox, FooterContainer, FooterIcons, FooterP, List, PTag } from './footer.styled'
+import FooterTop from './FooterTop'
 
  function Footer(props) {
     
 
     return (
         <FooterBox>
+            <FooterTop/>
             <FooterContainer className='container'>
             <div>
                 <img src="/footerIcons/foody.svg" alt='..'/>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const FooterBox = styled.footer`
 width: 100%;
+position: relative;
  height: 385px;
  background: #181617;
  @media only screen and (max-width: 768px) {

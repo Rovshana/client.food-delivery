@@ -17,7 +17,7 @@ export const Para =styled.p`
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 22px;
+font-size: 25px;
 line-height: 30px;
 color: #828282;
 margin: 0 auto;

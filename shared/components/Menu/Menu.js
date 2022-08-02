@@ -7,7 +7,7 @@ function Menu(props) {
     <Box>
       <ParentDiv>
         <ContentDiv>
-          <Title>Menu That Always Make You Fall In Love</Title>
+          <Title index1>Menu That Always Make You Fall In Love</Title>
           <ContentMenu>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual
@@ -25,7 +25,7 @@ function Menu(props) {
           <Image width={413} height={530} src="/menu/menu2.svg" alt=".." />
         </PhotoDiv>
         <ContentDiv>
-          <Title>Yummy Always Papa John’s Pizza.Agree?</Title>
+          <Title index2>Yummy Always Papa John’s Pizza.Agree?</Title>
           <ContentMenu>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual

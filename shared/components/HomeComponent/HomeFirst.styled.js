@@ -7,7 +7,7 @@ margin-right: 37px;
 border-radius: 4px;
 margin-bottom: 81px;
 height: 838px;
-@media only  screen and (max-width: 768px){
+/* @media only  screen and (max-width: 768px){
     width: 100%;
     background-color: orange;
     display: flex;
@@ -15,7 +15,7 @@ height: 838px;
     align-items: center;
     flex-direction: column-reverse;
     
-}
+} */
 
 `
 
@@ -28,6 +28,18 @@ font-size: 55px;
 line-height: 70px;
 margin-bottom: 5px;
 letter-spacing: 0.03em;
+@media  only screen and (min-width: 320px) and  (max-width: 576px){
+   
+    width: 279px;
+height: 90px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 24px;
+    
+}
 
 `
 export const Content = styled.p`
@@ -37,7 +49,7 @@ font-weight: 400;
 font-size: 22px;
 line-height: 30px;
 color: #828282;
-@media  only screen and (max-width: 768px){
+@media  only screen and (min-width: 320px) and  (max-width: 576px){
     display: none;
     
 }
@@ -54,6 +66,15 @@ color: #FFFFFF;
 font-weight: 500;
 font-size: 25px;
 margin-right: 39px;
+@media screen and (min-width: 320px) and (max-width: 576px){
+    width: 168px;
+height: 40px;
+
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+    
+}
 
 
 `
@@ -65,6 +86,15 @@ border: none;
 font-weight: 500;
 font-size: 25px;
 color: #828282;
+@media screen and (min-width: 320px) and (max-width: 576px){
+    width: 168px;
+height: 39px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+    
+}
 `
 export const ImageKeeper = styled.div`
 
@@ -72,9 +102,12 @@ border: 1px solid black;
 /* background: url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png), url(4-40662_transparent-background-burger-png-png-download-removebg-preview.png); */
 width: 529px;
 height: 476px;
-background: black;
+background-color: black;
 border-radius: 100px; //
-
+@media  only screen and (min-width: 320px) and  (max-width: 576px){
+    
+    background-color: transparent;
+}
 
 
 
@@ -91,5 +124,10 @@ export const Box = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media  only screen and (min-width: 320px) and  (max-width: 576px){
+    flex-direction: column-reverse;
+    
+}
 
 `

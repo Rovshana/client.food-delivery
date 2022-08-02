@@ -6,7 +6,7 @@ import { Title, Content, Button1, Button2, ImageKeeper, Box, Header, BoxImg} fro
 
     return (
         <Header>
-            <h1>Navbar will come there :)</h1>
+            <h1>Navbar will come with Matin )</h1>
         <Box>
             <div>
                 <Title>Our Food site makes it easy to find local food</Title>
