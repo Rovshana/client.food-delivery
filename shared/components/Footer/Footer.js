@@ -1,13 +1,15 @@
 import React from 'react'
-import { FooterBox, FooterContainer, FooterIcons, FooterP, List, PTag } from './footer.styled'
+import { FooterBox, FooterContainer, FooterIcons, FooterP, List, ListFooter, PTag } from './footer.styled'
 import FooterTop from './FooterTop'
 
  function Footer(props) {
     
 
     return (
+       <>
+        
         <FooterBox>
-            <FooterTop/>
+        <FooterTop/>
             <FooterContainer className='container'>
             <div>
                 <img src="/footerIcons/foody.svg" alt='..'/>
@@ -21,7 +23,8 @@ import FooterTop from './FooterTop'
 
             </div>
     
-            <ul>
+        
+          <ul>
             <List>Popular</List>
             <List>Fast food</List>
             <List>Sea foods</List>
@@ -42,10 +45,13 @@ import FooterTop from './FooterTop'
             <List>Buyer Help</List>
         
             </ul>
+        
+
          
             </FooterContainer>
             <PTag>All rights reserved © 2003-2022 Foody TERMS OF USE | Privacy Policy</PTag>
         </FooterBox>
+       </>
     )
 }
 

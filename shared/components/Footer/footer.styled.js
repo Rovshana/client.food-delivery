@@ -26,7 +26,7 @@ justify-content: space-between;
 position:relative;
 
 transform: translate( -50% -50%);
-height: 360px;
+height: 365px;
 @media only screen and (min-width: 320px)and (max-width: 576px) {
         /* For mobile phones: */
        display: flex;
@@ -56,13 +56,7 @@ font-size: 13px;
  line-height: 25.5px;
  color: #828282;
  list-style: none;
- @media only screen and(min-width: 320px) and(max-width: 576px) {
-        /* For mobile phones: */
-       display: none;
 
-      
-    
-    }
 
  :nth-child(1){
     font-family: 'Montserrat';
@@ -71,7 +65,10 @@ font-weight: 900;
 font-size: 18px;
 color: #FFFFFF;
  }
-
+ @media screen and (min-width: 320px)and (max-width: 576px){
+    display: none;
+    
+}
 `
 export const PTag = styled.p`
 font-family: 'Roboto';
@@ -108,6 +105,8 @@ font-size: 22px;
 line-height: 30px;
 color: #828282;
 `
+
+
 
 // footer top's style is here 
 export const Box = styled.div`
@@ -195,4 +194,10 @@ margin-bottom: 62px;
 }
 
 
+`
+
+
+export const ListFooter = styled.div`
+display: flex;
+justify-content: space-between;
 `

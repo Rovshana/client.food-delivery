@@ -1,19 +1,17 @@
+/* Footer Top */
 
-    
-
-
-    /* Footer Top */
-
-    .footer-top{
-        position: absolute;
-        top: -70%;
-        /* left: -50%; */
-        left: 0;
+.footer-top {
+  /* position: sticky; */
+  position: absolute;
+  top: -70%;
+  left: 0;
   right: 0;
   bottom: 0;
-        margin: 0 auto !important;
-        background: #272727;
-border-radius: 50px;
-width: 1066px;
-height: 372px;
-    }
+  margin: 0 auto !important;
+  /* margin: 80px auto -55px auto !important; */
+  background: #272727;
+  border-radius: 50px;
+  width: 1066px;
+  height: 372px;
+  /* z-index: 9999;  */
+}

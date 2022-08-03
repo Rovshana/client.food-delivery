@@ -11,7 +11,7 @@ import {
 
 function CardsBottom(props) {
   return (
-    <div className="container ">
+    <div className="container " style={{marginBottom: "100px"}}>
       <div>
         <Title>Our Popular Update New Foods</Title>
         <Para>
