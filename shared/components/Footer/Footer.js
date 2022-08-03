@@ -7,12 +7,15 @@ import FooterTop from './FooterTop'
 
     return (
        <>
-        
+         <FooterTop/>
         <FooterBox>
-        <FooterTop/>
+        
+       
             <FooterContainer className='container'>
             <div>
-                <img src="/footerIcons/foody.svg" alt='..'/>
+                <div className='foody'>
+                <img src="/footerIcons/foody.svg" alt='..' />
+                </div>
                 <FooterP>Lorem ipsum is placeholder text commonly used in the graphic, </FooterP>
                 <FooterIcons>
                     <img src='/footerIcons/facebook.svg' alt='.'/>

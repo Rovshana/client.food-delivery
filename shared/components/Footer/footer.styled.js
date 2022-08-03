@@ -10,7 +10,7 @@ position: relative;
         /* For mobile phones: */
        width: 100%;
        height: 424px;
-       
+      
 
       
     
@@ -30,6 +30,7 @@ height: 365px;
 @media only screen and (min-width: 320px)and (max-width: 576px) {
         /* For mobile phones: */
        display: flex;
+       flex-direction: column;
        justify-content: center;
        align-items: center;
 
@@ -74,7 +75,7 @@ export const PTag = styled.p`
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 18px;
 color: #828282;
 margin: 0 auto !important;
 text-align: center;
@@ -126,6 +127,7 @@ height: 60px;
 background: #FB9300;
 border-radius: 30px;
 border: none;
+display: block;
 margin: 0 auto;
 // 
 font-family: 'Roboto';
@@ -197,7 +199,3 @@ margin-bottom: 62px;
 `
 
 
-export const ListFooter = styled.div`
-display: flex;
-justify-content: space-between;
-`
