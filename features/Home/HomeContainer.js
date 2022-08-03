@@ -13,26 +13,7 @@ function HomeContainer(props) {
       <Cards />
       <Menu />
       <CardsBottom />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <Footer />
     </>
   );
