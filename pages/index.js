@@ -5,9 +5,9 @@ import { Test } from '../styles/test.styled'
 
 export default function Home() {
   return (
-    <div>
+    <main>
      {/* <Test>Hello</Test> */}
      <HomeContainer/>
-    </div>
+    </main>
   )
 }

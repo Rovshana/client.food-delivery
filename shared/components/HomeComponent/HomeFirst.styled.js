@@ -7,6 +7,7 @@ margin-right: 37px;
 border-radius: 4px;
 margin-bottom: 81px;
 height: 838px;
+padding-top: 50px;
 /* @media only  screen and (max-width: 768px){
     width: 100%;
     background-color: orange;
