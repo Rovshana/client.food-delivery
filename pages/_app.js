@@ -3,7 +3,9 @@ import '../styles/globals.css'
 import '../styles/login.css'
 import '../styles/footer.css'
 import '../styles/home.css'
-
+import '../styles/langbar.css'
+import '../styles/homefirst.scss'
+import "../i18n";
 
 
 
