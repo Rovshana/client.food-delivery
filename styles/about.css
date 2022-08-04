@@ -1,0 +1,28 @@
+
+.left{
+    width: 40%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: 'Mukta';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 30px;
+margin-bottom: 31px;
+color: #000000;
+
+}
+
+.content{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 35px;
+color: #828282;
+}
