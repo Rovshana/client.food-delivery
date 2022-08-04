@@ -12,7 +12,11 @@ height: 50px;
 /* border: 1px solid orange; */
 /* margin-top: 50px; */
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+   display: none;
 
+    
+  }
 `
 export const Ul = styled.ul`
 padding-top: 10px;

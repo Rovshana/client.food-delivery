@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
 .pizza {
   position: absolute;
   top: 0;
@@ -92,5 +93,25 @@
     width: 116px;
     text-align: center;
     color: black;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .pizza {
+    top: 30%;
+    right: 0%;
+    width: 184px;
+    height: 57px;
+
+    & img {
+      width: 50px;
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    & p {
+      width: 80px;
+      margin-bottom: 10px;
+    }
   }
 }
