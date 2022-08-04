@@ -10,11 +10,13 @@ import {
   PTag,
 } from "./footer.styled";
 import FooterTop from "./FooterTop";
-
+import { useRouter } from "next/router";
 function Footer(props) {
+  const route = useRouter();
+  console.log(route);
   return (
     <>
-      <FooterTop />
+      {route.pathname === "/" && <FooterTop />}
       <FooterBox>
         <FooterContainer className="container">
           <FooterContainerFirstDiv>
