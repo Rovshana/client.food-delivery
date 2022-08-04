@@ -1,0 +1,32 @@
+
+.parent{
+display: flex;
+flex-direction: column;
+}
+
+.title{
+    font-family: 'Mukta';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 30px;
+color: #000000;
+text-align: center;
+margin-bottom: 22px;
+}
+.content{
+    font-family: 'Roboto' ;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 35px;
+color: #828282;
+text-align: center;
+width: 95%;
+height: 184px;
+
+}
+
+.contentDiv{
+    margin-top: 74px;
+}
