@@ -20,7 +20,7 @@ import { Title, Content, Button1, Button2, ImageKeeper, Box, Header, BoxImg, But
             <BoxImg>
             < ImageKeeper>
                 
-                <Burger src="/burger.svg"  alt="." className='photo'/>
+                <Burger src="/burger.svg"  alt="."/>
             </ ImageKeeper>
             </BoxImg>
             

@@ -49,6 +49,19 @@ export const FooterIcons = styled.div`
         margin-right: 10px;
     }
 }
+@media only screen and (min-width: 320px)and (max-width: 576px) {
+        /* For mobile phones: */
+       display: flex;
+       
+       justify-content: center;
+       align-items: center;
+      
+    }
+
+
+      
+    
+ 
 `
 
 export const List = styled.li`
@@ -75,14 +88,16 @@ export const PTag = styled.p`
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 14px;
 color: #828282;
 margin: 0 auto !important;
 text-align: center;
 @media only screen and (min-width: 320px) and (max-width: 576px) {
         /* For mobile phones: */
-    
+    text-align: center;
         margin: 0 auto !important;
+        
+
 
       
     
@@ -105,6 +120,23 @@ font-weight: 400;
 font-size: 22px;
 line-height: 30px;
 color: #828282;
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+        /* For mobile phones: */
+    text-align: center;
+        margin: 0 auto !important;
+        
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.03em;
+
+
+      
+    
+    }
+
 `
 
 
