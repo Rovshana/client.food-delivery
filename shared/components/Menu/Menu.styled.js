@@ -77,7 +77,7 @@ export const Box = styled.div`
 export const ParentDiv = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   @media  screen and (min-width: 320px)and (max-width: 576px) {
     flex-direction: column;
     :nth-child(2) {

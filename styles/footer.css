@@ -33,8 +33,10 @@ align-items: center;
  
   @media screen and(min-width: 320px)  and (max-width: 576px){
     .foody{
-      display: flex;
-      justify-content: center;
+      margin: 0 auto;
+      display: block;
+     
     }
     
   }
+  

@@ -146,8 +146,8 @@ flex-direction: column;
 `
 export const Burger = styled.img`
  @media screen and (min-width: 320px)and(max-width: 576px){
-    width: 271px;
-height: 231px;
+    width: 165px;
+height: 100px;
 // question number1
     
  }
