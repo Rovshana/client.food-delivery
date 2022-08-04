@@ -1,0 +1,52 @@
+{
+  "translation": {
+    "airport title": "Nakhchivan International Airport",
+    "menu": {
+      "about": "Haqqımızda",
+      "passengerFor": "For passengers",
+      "cargo": "cargo transportation",
+      "Services": "Services",
+      "aboutNakhchivan": "About Nakhchivan",
+      "General Information":"General Information",
+      "history": "History",
+      "prospects" : "Development prospects",
+      "Technical data":"Technical Data",
+      "Flight safety":"Flight Safety",
+      "Certificates":"Certificates",
+      "Flight schedule":"Flight schedule",
+      "Ticket sales points":"Ticket sales points",
+      "Rules":"Rules",
+      "vipServices":"Vip Services",
+      "Mobile services":"Mobile Services",
+      "Contact information":"Contact information",
+      "Historical monuments":"Historical Monuments"
+
+    },
+    "ticketSales": {
+      "return": "Return",
+      "oneWay": "One Way",
+      "from": "From",
+      "to": "To",
+      "departure": "Departure",
+      "class": "Class",
+      "passengers": "Passengers"
+    },
+    "registration": "Registration",
+    "managment": "Reservation Management",
+    "table": "Table",
+    "status": "Flight status",
+    "hotelReserv": "Hotel reservation",
+    "auto": "Car rental",
+    "taksi": "Taxi Service",
+    "publicTransport": "Public transport",
+    "news": "News",
+    "more": "Read More",
+    "photoGallery":"Photo gallery",
+    "videoGallery":"Video gallery",
+    "turizim" : "Nakhchivan Turizm",
+    "RecreationCenters" :"Recreation Centers",
+    "Museums":"Museums",
+    "Tourist places":"Tourist Places",
+    "hotels":"Hotels"
+  }
+}
