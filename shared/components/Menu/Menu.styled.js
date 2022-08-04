@@ -44,7 +44,7 @@ export const ContentDiv = styled.div`
   height: 530px;
   margin-right: 80px;
   @media only screen and (min-width: 320px) and (max-width: 576px) {
-    width: 30%;
+    width: 100%;
     height: 250px;
     margin: 20px auto;
   }
@@ -59,7 +59,7 @@ export const ContentMenu = styled.p`
   margin-top: 30px;
   margin-left: 111px;
 
-  @media only screen  and (min-width: 320px)and (max-width: 576px) {
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -73,12 +73,16 @@ export const ContentMenu = styled.p`
 export const Box = styled.div`
   margin-top: 281px;
   margin-bottom: 200px;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+   margin-top: 120px;
+  }
+  
 `;
 export const ParentDiv = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 70px;
-  @media  screen and (min-width: 320px)and (max-width: 576px) {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     flex-direction: column;
     :nth-child(2) {
       flex-direction: column-reverse;
@@ -90,8 +94,8 @@ export const PhotoDiv = styled.div`
   /* margin-top: 200px; */
   width: 40%;
   /* border: 1px solid orange; */
-  @media screen and (min-width: 320px)and (max-width: 576px) {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     /* For mobile phones: */
     width: 20%;
   }
-`
+`;

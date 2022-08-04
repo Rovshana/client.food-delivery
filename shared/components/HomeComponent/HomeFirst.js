@@ -40,7 +40,7 @@ function HomeFirst(props) {
         </div>
         <BoxImg>
           <ImageKeeper>
-          <Burger src="/burger.svg" alt="." />
+          <img src={`${ width > 576 ? "/burger.svg" : "/burgerResp.svg"}`} alt="." />
           </ImageKeeper>
          
           <motion.div 

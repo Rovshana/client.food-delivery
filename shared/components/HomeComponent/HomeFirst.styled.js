@@ -8,6 +8,12 @@ export const Header = styled.header`
   margin-bottom: 81px;
   height: 838px;
   padding-top: 50px;
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    margin-left: 0;
+  margin-right: 0;
+    height: auto;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -55,7 +61,7 @@ export const Button1 = styled.button`
   @media screen and (min-width: 320px) and (max-width: 576px) {
     width: 168px;
     height: 40px;
-
+    margin-right: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -85,15 +91,18 @@ export const ImageKeeper = styled.div`
   width: 529px;
   height: 496px;
   border-radius: 100px;
-  /* background-color: black; */
-  /* @media  only screen and (min-width: 320px) and  (max-width: 576px){
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    height: auto;
+    & img{
+      width: 100%;
     
-    background-color: transparent;
-    width: 271px;
-height: 231px; */
+    }
+    
+  }
 `;
 export const BoxImg = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+ 
   width: 100%;
   position: relative;
   display: flex;
@@ -107,6 +116,7 @@ export const Box = styled.div`
   align-items: center;
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     flex-direction: column-reverse;
+   
   }
 `;
 
@@ -114,6 +124,8 @@ export const ButtonBox = styled.div`
   @media screen and (min-width: 320px) and (max-width: 576px) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const Burger = styled.img`
