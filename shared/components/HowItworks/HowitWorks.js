@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from '../Navbar/Navbar'
+import {useState, useEffect} from "react"
 function HowitWorks(props) {
+  const [width, setWidth]  = useState(0)
+useEffect(() => {
+    setWidth(window.innerWidth)
+}, [])
+  console.log(width)
   return (
     <div className="container">
-        <Navbar/>
+        {/* <Navbar/> */}
     <div className="parent">
       <div className="contentDiv">
-        <h3 className="title">How it works</h3>
-        <p className="content"> 
+        <h3 className="title titleMedia">How it works</h3>
+        <p className="content contentMedia"> 
           Delivery may be extended during sale periods. Please refer to the
           checkout page for an updated estimate for your location. Kindly note
           that once you have placed an order, it is no longer possible to modify
@@ -18,8 +24,8 @@ function HowitWorks(props) {
           registered home address.
         </p>
       </div>
-      <div>
-        <img src="/How/delivery.svg" alt=".." />
+      <div className="imgDiv">
+        <img src={`${width > 576 ? '/how/delivery.svg' : "/how/deliveryMedia.svg"}`}  />
       </div>
     </div>
     </div>
