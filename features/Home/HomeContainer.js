@@ -14,7 +14,7 @@ function HomeContainer(props) {
       <Menu />
       <CardsBottom />
       
-      <Footer />
+     
     </>
   );
 }

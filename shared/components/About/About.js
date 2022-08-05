@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-
+import { motion } from "framer-motion"
  function About(props) {
     
 
     return (
         <div className='container'>
-            <Navbar/>
+         
         <div className=' main'>
             
             <div className='left'>
@@ -15,6 +15,18 @@ import Navbar from '../Navbar/Navbar'
             </div>
             <div>
                 <img src='/about/photo.svg' alt='..'/>
+                <motion.div animate={{scale: 1.2}} 
+          transition={{
+            duration:2,
+            repeat:Infinity,
+          }} className="burger">
+            <img src='/about/hamburger.svg' alt='..'  className='photo'/>
+         
+            <h3 className='title'>Hamburger</h3>
+            <h4>$5.90</h4>
+         
+
+                </motion.div>
             </div>
             </div> 
         </ div>

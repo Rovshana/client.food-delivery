@@ -16,6 +16,7 @@ import {
   CheeseBurg,
 } from "./HomeFirst.styled";
 import { motion } from "framer-motion"
+import { Nav } from "../Navbar/Navbar.styled";
 function HomeFirst(props) {
    const [width,setWidth] = useState(0)
    useEffect(()=>{
@@ -25,7 +26,7 @@ function HomeFirst(props) {
    console.log(width);
   return (
     <Header>
-      <Navbar />
+      <Navbar/>
       <Box className="container">
         <div>
           <Title>Our Food site makes it easy to find local food</Title>
