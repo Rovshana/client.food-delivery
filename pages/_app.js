@@ -8,6 +8,7 @@ import "../styles/how.css";
 import "../styles/langbar.css";
 import "../styles/homefirst.scss";
 import "../i18n";
+import Layout from '../features/Layout/Layout'
 
 import { store } from "../store";
 import { Provider } from "react-redux";
@@ -16,10 +17,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Provider store={store}>
+          <Layout>
         <Component {...pageProps} />
+         </Layout>
       </Provider>
     </>
   );
 }
 
 export default MyApp;
+

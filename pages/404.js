@@ -6,7 +6,6 @@ import { ErrorContainer } from '../features/Error/ErrorContainer'
 
     return (
         <>
-            <h1>No worries, navbar'll come very soon:)</h1>
             <ErrorContainer/>
         </>
     )

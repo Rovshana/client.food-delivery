@@ -9,7 +9,7 @@ import Footer from '../../shared/components/Footer/Footer'
         <>
         
            <About/>
-           <Footer/> 
+          
         </>
     )
 }
