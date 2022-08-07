@@ -13,11 +13,8 @@
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
-<<<<<<< HEAD
-=======
     "@reduxjs/toolkit": "^1.8.3",
     "axios": "^0.27.2",
->>>>>>> 364d84f142d9eebc56856a8ad96a6424a0bfb0f9
     "bootstrap": "^5.2.0",
     "components": "^0.1.0",
     "formik": "^2.2.9",
