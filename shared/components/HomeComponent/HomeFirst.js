@@ -23,7 +23,7 @@ function HomeFirst(props) {
     setWidth(window.innerWidth);
    },[])
 
-   console.log(width);
+  //  console.log(width);
   return (
     <Header>
       <Navbar/>

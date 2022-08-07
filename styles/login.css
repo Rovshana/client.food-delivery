@@ -1,3 +1,17 @@
-.login{
-    
+.login-base .form-control:focus {
+  color: #4f4f4f;
+  background: #ffe7e7;
+  border-color: transparent !important;
+}
+
+.login-base form .form-group:nth-child(4) {
+  position: relative;
+  color: red;
+}
+
+.passwordIcon {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  /* transform: translateY(-5%) */
 }
