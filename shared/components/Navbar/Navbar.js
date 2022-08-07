@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useRouter } from "next/router";
 const lngs = {
   az: { nativeName: "Az" },
   en: { nativeName: "En" },
@@ -21,6 +22,10 @@ function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((prevState) => !prevState);
   const { t, i18n } = useTranslation();
+
+  // router
+  const route = useRouter();
+  console.log(route)
   return (
     <>
       <Nav className="container">
@@ -28,11 +33,11 @@ function Navbar(props) {
           <img src="/foody.svg" alt=".." />
         </div>
         <Ul>
-          <ListLi>Home</ListLi>
-          <ListLi>Restaurants</ListLi>
-          <ListLi>About us</ListLi>
-          <ListLi>How it works </ListLi>
-          <ListLi>FAQs </ListLi>
+          <ListLi onClick={()=>route.push('/')}>Home</ListLi>
+          <ListLi onClick={()=>route.push('/restaurants')}>Restaurants</ListLi>
+          <ListLi  onClick={()=>route.push('/about')}>About us</ListLi>
+          <ListLi  onClick={()=>route.push('/howitworks')}>How it works </ListLi>
+          <ListLi  onClick={()=>route.push('/faqs')}>FAQs </ListLi>
         </Ul>
         <LangSignDiv>
         <Dropdown

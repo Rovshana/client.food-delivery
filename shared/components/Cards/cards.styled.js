@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2`
 width: 394px;
 height: 68px;
+
 /* font-family: 'Roboto';
 font-style: normal; */
 font-weight: 900;
@@ -23,7 +24,7 @@ color: #181617;
 `
   
 export const Para =styled.p`
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 25px;

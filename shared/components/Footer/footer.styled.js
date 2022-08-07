@@ -102,7 +102,7 @@ export const List = styled.li`
   }
 `;
 export const PTag = styled.p`
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -141,7 +141,7 @@ export const Button = styled.button`
   display: block;
   margin: 0 auto;
   //
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -160,10 +160,10 @@ export const Button = styled.button`
 `;
 
 export const Title = styled.h2`
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 70px;
   color: #ffff;
   width: 550px;
@@ -173,7 +173,7 @@ export const Title = styled.h2`
     width: 200px;
     height: 60px;
 
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

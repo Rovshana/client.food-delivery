@@ -5,6 +5,7 @@ import '../styles/footer.css'
 import '../styles/home.css'
 import '../styles/about.css'
 import '../styles/langbar.css'
+import '../styles/question.css'
 import '../styles/homefirst.scss'
 import "../i18n";
 import Layout from '../features/Layout/Layout'
