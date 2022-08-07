@@ -29,7 +29,7 @@ export const Title = styled.h1`
     width: 279px;
     height: 90px;
 
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 20px;

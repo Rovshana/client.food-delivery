@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import Image from 'next/image'
 import { motion } from "framer-motion"
  function About(props) {
     
@@ -26,6 +27,16 @@ import { motion } from "framer-motion"
             <h4>$5.90</h4>
          
 
+                </motion.div>
+                <motion.div className='coffee'>
+                    <img src="/about/coffee.svg" />
+                    <p>Papa Coffee</p>
+                    <p>$1.40</p>
+                </motion.div>
+                <motion.div className='pizza'>
+                    <img src="/about/pizza.svg" />
+                    <p>Sousage Pizza</p>
+                    <p>$7.90</p>
                 </motion.div>
             </div>
             </div> 
