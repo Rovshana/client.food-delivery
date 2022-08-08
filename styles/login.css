@@ -15,3 +15,29 @@
   right: 5%;
   /* transform: translateY(-5%) */
 }
+
+
+.login-base .nav-item{
+  border: none;
+background-color: transparent;
+margin-right: 33px;
+cursor: pointer;
+
+}
+.login-base .nav-item .nav-link{
+  font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+color: #828282;
+}
+
+.login-base .nav-item .nav-link.active{
+  background-color: transparent !important;
+  color: #EB5757 !important;
+}
+
+
+.login-base .tab-content{
+  width: 100%;
+}

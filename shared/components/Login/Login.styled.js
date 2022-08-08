@@ -70,29 +70,8 @@ justify-content: center;
 width: 100%;
 `
 
-export const LoginBtn = styled.button`
-cursor: pointer;
-font-family: 'Roboto',sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-color: ${props=>props.theme === "active" ? "#EB5757" :"#828282"};
-border: none;
-background-color: transparent;
-margin-right: 33px;
-`
 
-export const RegisterBtn = styled.button`
-cursor: pointer;
-font-family: 'Roboto',sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-color: ${props=>props.theme === "active" ? "#EB5757" :"#828282"};
-border: none;
-background-color: transparent;
-margin-left: 33px;
-`
+
 
 
 export const MyFrom = styled.form`

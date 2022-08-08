@@ -10,26 +10,45 @@ import {
 } from "../Login.styled";
 import { useRouter } from "next/router";
 import FormDiv from "./FormDiv";
+import { useState } from "react";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 function LoginBody() {
-  const handleClick = (e)=>{
-    console.log(e.target.innerText);
-  }
+  const [value, setValue] = useState("");
+  const handleClick = (e) => {
+    setValue(e.target.innerText);
+  };
   const route = useRouter();
   return (
     <LoginBodyDiv>
       <LoginBodyLeft>
         <LoginImageDiv>
-          <img src={`${route.pathname === "/login" ? "/login/loginImage.svg" : route.pathname === "/register" ? "/login/registerImage.svg" :"" }`} />
+          <img
+            src={`${
+              route.pathname === "/login"
+                ? "/login/loginImage.svg"
+                : route.pathname === "/register"
+                ? "/login/registerImage.svg"
+                : ""
+            }`}
+          />
         </LoginImageDiv>
       </LoginBodyLeft>
       <LoginBodyRight>
-      <LoginFormDiv>
-      <FormBtns>
-        <LoginBtn  onClick={(e)=>handleClick(e)} >Login</LoginBtn>
-        <RegisterBtn onClick={(e)=>handleClick(e)}>Register</RegisterBtn>
-      </FormBtns>
-      <FormDiv/>
-    </LoginFormDiv>
+        <LoginFormDiv>
+          <Tabs
+            defaultActiveKey="login"
+            id="uncontrolled-tab-example"
+            className="mb-3"
+          >
+            <Tab eventKey="login" title="Login">
+              <FormDiv  />
+            </Tab>
+            <Tab eventKey="register" title="Register">
+              <FormDiv value="Register" />
+            </Tab>
+          </Tabs>
+        </LoginFormDiv>
       </LoginBodyRight>
     </LoginBodyDiv>
   );
