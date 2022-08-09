@@ -45,8 +45,11 @@ color: #D63626;
 
 export const LangSignDiv = styled.div`
 display: flex;
-margin-right:70px ;
+/* margin-right:70px ; */
 
+& img{
+  margin-right: 15px;
+}
 
 `
 
@@ -62,4 +65,25 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 border: none;
+`
+
+export const ProfileNav = styled.div`
+width: 40px;
+height: 40px;
+/* width: 40px; */
+/* height: 40px; */
+background: #F178B6;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+& p{
+  font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 0 !important;
+color: #FFFFFF;
+}
 `

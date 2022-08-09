@@ -8,29 +8,31 @@ import { usersApi, usersPostApi } from "../../../../api/login";
 import { setUsers } from "../../../../store/slices/LoginSlices";
 
 function FormDiv({ value }) {
-  const [showBtn,setShowBtn] = useState(false)
+  const [showBtn, setShowBtn] = useState(false);
   const dispatch = useDispatch();
   const state = useSelector((state) => state.LoginSlices.users);
-  // console.log(state);
   const [show, setShow] = useState(true);
   const formik = useFormik({
     initialValues: {
       username: "",
+      email:"",
       fullname: "",
-      email: "",
       password: "",
     },
     onSubmit: (values) => {
-      const val = {
-        id: Date.now(),
-        ...values,
-      };
-      usersPostApi(val).then((res) => {
-        if (res.status === 201) {
-          let data = [...state, val];
-          dispatch(setUsers(data));
-        }
-      });
+    
+        const val = {
+          id: Date.now(),
+          ...values,
+        };
+        usersPostApi(val).then((res) => {
+          if (res.status === 201) {
+            let data = [...state, val];
+            dispatch(setUsers(data));
+          }
+        });
+      
+    
     },
     validate: (values) => {
       let errors = {};
@@ -52,15 +54,13 @@ function FormDiv({ value }) {
           errors.email = "Eynidi";
         }
       });
-      if ((values.username.length === "" || values.password.length === "" || values.email.length === "" || values.fullname.length === "") && (!errors === {})) {
-        setShowBtn(true)
-      }
+
       return errors;
     },
   });
   return (
     <MyFrom onSubmit={formik.handleSubmit}>
-      {value === "Register" && (
+     
         <div className="form-group mb-3">
           <label htmlFor="fullname">Full Name</label>
           <input
@@ -72,7 +72,7 @@ function FormDiv({ value }) {
             value={formik.values.fullname}
           />
         </div>
-      )}
+  
       <div className="form-group mb-3">
         <label htmlFor="username">User Name</label>
         <input
@@ -88,7 +88,7 @@ function FormDiv({ value }) {
         )}
       </div>
 
-      {value === "Register" && (
+
         <div className="form-group mb-3">
           <label htmlFor="email">Email</label>
           <input
@@ -103,7 +103,7 @@ function FormDiv({ value }) {
             <div className="error">{formik.errors.email}</div>
           )}
         </div>
-      )}
+ 
       <div className="form-group mb-3">
         <label htmlFor="password">Password</label>
         <input
@@ -115,19 +115,17 @@ function FormDiv({ value }) {
           value={formik.values.password}
         />
 
-        {value === "Register" && (
+     
           <VisibilityOffIcon
             onClick={() => {
               setShow(!show);
             }}
             className="passwordIcon"
           />
-        )}
+       
       </div>
 
-      <button disabled={!showBtn ? "disabled" : ""} type="submit">
-        {value === "Register" ? "Register" : "Login"}
-      </button>
+      <button type="submit">Register</button>
     </MyFrom>
   );
 }

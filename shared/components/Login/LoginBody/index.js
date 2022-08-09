@@ -9,15 +9,16 @@ import {
   RegisterBtn,
 } from "../Login.styled";
 import { useRouter } from "next/router";
-import FormDiv from "./FormDiv";
+import FormDivRegister from "./FormDivRegister";
+import FormDivLogin from "./FormDivLogin";
 import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 function LoginBody() {
-  const [value, setValue] = useState("");
-  const handleClick = (e) => {
-    setValue(e.target.innerText);
-  };
+  const [image,Setimage] = useState();
+  const handleChange = ()=>{
+
+  }
   const route = useRouter();
   return (
     <LoginBodyDiv>
@@ -37,15 +38,15 @@ function LoginBody() {
       <LoginBodyRight>
         <LoginFormDiv>
           <Tabs
-            defaultActiveKey="login"
+            defaultActiveKey="register"
             id="uncontrolled-tab-example"
             className="mb-3"
           >
-            <Tab eventKey="login" title="Login">
-              <FormDiv  />
+            <Tab onClick={handleChange} eventKey="login" title="Login">
+              <FormDivLogin/>
             </Tab>
             <Tab eventKey="register" title="Register">
-              <FormDiv value="Register" />
+              <FormDivRegister/>
             </Tab>
           </Tabs>
         </LoginFormDiv>
