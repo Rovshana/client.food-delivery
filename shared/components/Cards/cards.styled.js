@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
 width: 394px;
-height: 68px;
+
+
 
 /* font-family: 'Roboto';
 font-style: normal; */

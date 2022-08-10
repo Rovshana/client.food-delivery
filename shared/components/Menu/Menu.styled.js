@@ -93,6 +93,8 @@ export const ParentDiv = styled.div`
 export const PhotoDiv = styled.div`
   /* margin-top: 200px; */
   width: 40%;
+  
+  margin-left: 20px;
   /* border: 1px solid orange; */
   @media screen and (min-width: 320px) and (max-width: 576px) {
     /* For mobile phones: */

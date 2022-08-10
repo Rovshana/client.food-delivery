@@ -1,5 +1,6 @@
 import Restaurant from "../../shared/components/restaurant/Restaurant";
 import RestaurantCards from "../../shared/components/restaurant/RestaurantCards";
+import CirclePagination from "../../shared/components/Pagination/CirclePagination"
 
 function RestaurantsContainer() {
     return ( 
@@ -9,7 +10,9 @@ function RestaurantsContainer() {
         </div >
         <div className="col-9">
         <RestaurantCards/>
+        <CirclePagination/>
         </div>
+        
         </div>
      );
 }
