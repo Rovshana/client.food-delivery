@@ -7,8 +7,13 @@ justify-content: space-between;
 flex-direction: row;
 align-items: center;
 margin-bottom: 20px;
-width: 100%;
-height: 50px;
+margin-top: 30px;
+
+
+width: 86%;
+height: 120px;
+background: rgba(243, 244, 246, 1);
+
 /* border: 1px solid orange; */
 /* margin-top: 50px; */
 

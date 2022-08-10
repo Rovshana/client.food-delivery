@@ -1,129 +1,103 @@
-.box{
-    height: 100vh;
+.box {
+  height: 100vh;
 }
-.parent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.parent {
+  display: flex;
+  flex-direction: row;
 }
-.card1{
-    width: 245px;
-height: 345.27px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin-right: 51px;
-margin-bottom: 30px;
-margin-top: 23px;
+.card1 {
+  width: 245px;
+  height: 345.27px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 51px;
+  margin-bottom: 30px;
 
-background: #FFFFFF;
+  background: #ffffff;
 }
 
-.photo{
-    margin: 0 auto;
+.content {
+  color: #828282;
 }
-.content{
-   
-
-color: #828282;
-}
-.title{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-
-color: #4F4F4F;
+.parent .card1 .title {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #4f4f4f;
+  margin-bottom: 5px !important;
+  padding-left: 0;
 }
 
-.span1{
-    color: #4F4F4F;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 70px;
+.contentcard {
+  color: #828282;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 23px;
 }
-.red{
-    width: 78px;
-height: 31.38px;
-background: #D63626;
-border-radius: 30px;
-text-align: center;
-color:#FFFFFF;
-font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-margin-right: 17px;
+.red {
+  width: 78px;
+  height: 31.38px;
+  background: #d63626;
+  border-radius: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 17px;
 }
-.delivery{
-    font-family: 'Roboto'sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-margin-left: 10px;
-color: #4F4F4F;
-
+.delivery {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  color: #4f4f4f;
 }
-.lastBox{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.lastBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-
-
 
 /* restaurant sidebar */
-.sidebar{
-    width: 251px;
-    background: #F3F4F6;
-    padding: 40px 0;
-   
-
+.sidebar {
+  width: 251px;
+  background: #f3f4f6;
+  padding: 40px 0;
+  margin-bottom: 30px;
 }
 
-
-.parent2{
-    display: flex;
-    flex-direction: row;
- align-items: center;
- justify-content: center;
- margin-left: 18px;
- margin-right: 27px;
- margin-top: 34px;
- width: 205px;
- height: 40px;
- 
-
-
+.parent2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+  margin-right: 27px;
+  margin-top: 34px;
+  width: 205px;
+  height: 40px;
 }
-.parent2:hover{
-   
-border-radius: 4px;
-background: #D63626;
-opacity: 0.1;
-color:#D63626 ;
+.parent2:hover {
+  border-radius: 4px;
+  background-color: rgba(214, 54, 38, 0.1);
 
-;
+  color: #d63626;
 }
 
-
-
-
-
-.type{
-    font-family: 'Mukta';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-margin-left: 17px;
-padding-top: 15px;
-
-
-}
-
-.type ::first-line{
-    padding-top: 49px;
+.type {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 17px;
+  padding-top: 15px;
 }
