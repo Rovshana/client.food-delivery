@@ -14,6 +14,7 @@ import "../styles/footer.css";
 import "../styles/home.css";
 import "../styles/about.css";
 import "../styles/how.css";
+import "../styles/restaurant.css";
 import "../styles/langbar.css";
 import "../styles/homefirst.scss";
 

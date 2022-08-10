@@ -1,0 +1,72 @@
+.box{
+    height: 100vh;
+}
+.card1{
+    width: 245px;
+height: 345.27px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-right: 51px;
+margin-bottom: 30px;
+margin-top: 23px;
+
+background: #FFFFFF;
+}
+.photo{
+    margin: 0 auto;
+}
+.content{
+   
+
+color: #828282;
+}
+.title{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+
+color: #4F4F4F;
+}
+
+.span1{
+    color: #4F4F4F;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 70px;
+}
+.red{
+    width: 78px;
+height: 31.38px;
+background: #D63626;
+border-radius: 30px;
+text-align: center;
+color:#FFFFFF;
+font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin-right: 17px;
+}
+.delivery{
+    font-family: 'Roboto'sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+margin-left: 10px;
+color: #4F4F4F;
+
+}
+.lastBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+}
