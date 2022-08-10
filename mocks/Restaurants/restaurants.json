@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Burger King",
+    "cuisine": ["chinese", "sea-food", "thai", "lebanese", "caribbean"],
+    "delivery": "5$",
+    "time": 30,
+    "categories": ["Fast food","Pizza"],
+    "products": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 8,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Papa John`s",
+    "cuisine": ["chinese", "sea-food", "thai", "lebanese", "caribbean"],
+    "delivery": "8$",
+    "time": 30,
+    "categories": ["fast food","Pizza","Sea Food"],
+    "products": [
+      {
+        "id": 1,
+        "name": "pizza",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 8,
+        "image": ""
+      }
+    ] 
+  }
+
+]
