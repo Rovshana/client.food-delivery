@@ -1,19 +1,28 @@
 import {
   RestaurantImage,
   RestaurantInformation,
+  RestaurantInformationLeft,
+  RestaurantInformationRight,
   RestaurantPayment,
   RestaurantProducts,
   RestaurantProductsContainer,
   RestaurantProductsCounter,
 } from "./RestaurantPayment.styled";
-import Image from "next/image";
+// import Image from "next/image";
 function RestaurantPaymentContainer() {
   return (
-    <RestaurantPayment>
+    <RestaurantPayment className="container">
       <RestaurantImage>
-        <Image src="https://" width="300" height="300" alt="" />
+        <img src="/restaurants/papa.png"  alt="" />
       </RestaurantImage>
-      <RestaurantInformation></RestaurantInformation>
+      <RestaurantInformation>
+      <RestaurantInformationLeft>
+
+      </RestaurantInformationLeft>
+      <RestaurantInformationRight>
+        
+        </RestaurantInformationRight>
+      </RestaurantInformation>
       <RestaurantProductsContainer>
         <RestaurantProducts></RestaurantProducts>
         <RestaurantProductsCounter></RestaurantProductsCounter>
