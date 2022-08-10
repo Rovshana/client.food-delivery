@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
 }
-.title{
+.left.title{
     font-family: 'Mukta';
 font-style: normal;
 font-weight: 600;
