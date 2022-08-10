@@ -1,6 +1,11 @@
 .box{
     height: 100vh;
 }
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .card1{
     width: 245px;
 height: 345.27px;
@@ -11,6 +16,7 @@ margin-top: 23px;
 
 background: #FFFFFF;
 }
+
 .photo{
     margin: 0 auto;
 }
@@ -66,7 +72,58 @@ color: #4F4F4F;
     flex-direction: row;
 }
 
-.parent{
+
+
+/* restaurant sidebar */
+.sidebar{
+    width: 251px;
+    background: #F3F4F6;
+    padding: 40px 0;
+   
+
+}
+
+
+.parent2{
     display: flex;
     flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ margin-left: 18px;
+ margin-right: 27px;
+ margin-top: 34px;
+ width: 205px;
+ height: 40px;
+ 
+
+
+}
+.parent2:hover{
+   
+border-radius: 4px;
+background: #D63626;
+opacity: 0.1;
+color:#D63626 ;
+
+;
+}
+
+
+
+
+
+.type{
+    font-family: 'Mukta';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+margin-left: 17px;
+padding-top: 15px;
+
+
+}
+
+.type ::first-line{
+    padding-top: 49px;
 }

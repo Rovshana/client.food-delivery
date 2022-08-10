@@ -13,12 +13,12 @@ import React from 'react'
                 <div>
                     <h2 className='title'>Coffee Mania</h2>
                     <p>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
+    
                 <div className='lastBox'>
                     <p className='delivery'>$5 Delivery</p>
                     <div className='red'>09 min</div>
                 </div>
-                
+                </div>
             </div>
             <div className='card1'>
                 <div>
@@ -50,6 +50,62 @@ import React from 'react'
             </div>
             <div className='card1'>
                 <div>
+                    <img src='/restaurant/soup.svg' alt=''/>
+                </div>
+                <div>
+                    <h2 className='title'>Coffee Mania</h2>
+                    <p>chinese, sea-food, thai, lebanese, caribbean</p>
+    
+                <div className='lastBox'>
+                    <p className='delivery'>$5 Delivery</p>
+                    <div className='red'>09 min</div>
+                </div>
+                </div>
+            </div>
+            <div className='card1 '>
+                <div>
+                    <img src='/restaurant/soup.svg' alt=''/>
+                </div>
+                <div>
+                    <h2 className='title'>Coffee Mania</h2>
+                    <p>chinese, sea-food, thai, lebanese, caribbean</p>
+    
+                <div className='lastBox'>
+                    <p className='delivery'>$5 Delivery</p>
+                    <div className='red'>09 min</div>
+                </div>
+                </div>
+            </div>
+            <div className='card1 '>
+                <div>
+                    <img src='/restaurant/soup.svg' alt=''/>
+                </div>
+                <div>
+                    <h2 className='title'>Coffee Mania</h2>
+                    <p>chinese, sea-food, thai, lebanese, caribbean</p>
+    
+                <div className='lastBox'>
+                    <p className='delivery'>$5 Delivery</p>
+                    <div className='red'>09 min</div>
+                </div>
+                </div>
+            </div>
+            <div className='card1 '>
+                <div>
+                    <img src='/restaurant/soup.svg' alt=''/>
+                </div>
+                <div>
+                    <h2 className='title'>Coffee Mania</h2>
+                    <p>chinese, sea-food, thai, lebanese, caribbean</p>
+    
+                <div className='lastBox'>
+                    <p className='delivery'>$5 Delivery</p>
+                    <div className='red'>09 min</div>
+                </div>
+                </div>
+            </div>
+            <div className='card1'>
+                <div>
                     <img src='/restaurant/papajohn.svg' alt=''/>
                 </div>
                 <div>
@@ -63,7 +119,7 @@ import React from 'react'
                 
             </div>
             </div>
-            <div className='parent'>
+            {/* <div className='parent'>
             <div className='card1 '>
                 <div>
                     <img src='/restaurant/soup.svg' alt=''/>
@@ -121,7 +177,7 @@ import React from 'react'
                 
             </div>
             </div>
-           
+            */}
                
         </div>
     )
