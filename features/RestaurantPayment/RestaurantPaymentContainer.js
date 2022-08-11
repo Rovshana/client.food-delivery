@@ -12,24 +12,38 @@ import {
   RestaurantProductsCounter,
 } from "./RestaurantPayment.styled";
 import RestaurantProductsBasket from "./RestaurantProductsBasket";
-// import Image from "next/image";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+
 function RestaurantPaymentContainer() {
+  const [data, setData] = useState({});
+  const route = useRouter();
+  const state = useSelector((state) => state.RestaurantSlice.restaurants);
+  console.log(state);
+  useEffect(() => {
+    if (route.query.name) {
+      let arr = state.filter((item) => item.name === route.query.name);
+      setData(arr[0]);
+    }
+  }, [route.query.name]);
+  console.log(data);
   return (
     <RestaurantPayment className="container">
       <RestaurantImage>
-        <img src="/restaurants/papa.png" alt="" />
+        <img src={`/restaurants/${data?.image}.png`} alt="" />
       </RestaurantImage>
       <RestaurantInformation>
         <RestaurantInformationLeft>
-          <p>Papa John’s Pizza Restaurant</p>
-          <p>19 Nizami street, Sabail, Baku</p>
+          <p>{data?.name}</p>
+          <p>{data?.street}</p>
         </RestaurantInformationLeft>
         <RestaurantInformationRight>
           <p>Cuisine</p>
-          <p>pizza, drink, hotdog, sendvich, roll</p>
+          <p>{data?.cuisine?.join(",")}</p>
         </RestaurantInformationRight>
         <DeliveryDiv>
-          <p>5$</p>
+          <p>{data?.delivery}$</p>
           <p>Delivery</p>
         </DeliveryDiv>
         <GoBackBtn>Go Back</GoBackBtn>
@@ -37,10 +51,10 @@ function RestaurantPaymentContainer() {
       <RestaurantProductsContainer>
         <RestaurantProducts>
           <h3>Products</h3>
-          <ProductItem/>
+          <ProductItem  value={data && data}/>
         </RestaurantProducts>
         <RestaurantProductsCounter>
-              <RestaurantProductsBasket/>
+          <RestaurantProductsBasket />
         </RestaurantProductsCounter>
       </RestaurantProductsContainer>
     </RestaurantPayment>
