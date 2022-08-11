@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useSelector } from "react-redux";
 import { BasketDiv, ItemsDiv } from "./RestaurantPayment.styled";
 
 function RestaurantProductsBasket() {
+  const state = useSelector((state) => state)
+  console.log(state);
   return (
     <>
       <ItemsDiv>

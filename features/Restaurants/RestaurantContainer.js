@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 function RestaurantsContainer() {
   const [categoryRes,setCategoryRes] = useState([])
   const route = useRouter();
-  // console.log(route);
   const state = useSelector((state) => state.RestaurantSlice.restaurants);
   useEffect(() => {
     if (route.query.category) {

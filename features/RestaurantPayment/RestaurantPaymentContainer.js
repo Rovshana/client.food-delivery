@@ -20,14 +20,14 @@ function RestaurantPaymentContainer() {
   const [data, setData] = useState({});
   const route = useRouter();
   const state = useSelector((state) => state.RestaurantSlice.restaurants);
-  console.log(state);
-  useEffect(() => {
-    if (route.query.name) {
-      let arr = state.filter((item) => item.name === route.query.name);
+
+  useEffect( () => {
+   
+      let arr =  state.filter((item) => item.name === route.query.name);
       setData(arr[0]);
-    }
+  
   }, [route.query.name]);
-  console.log(data);
+  
   return (
     <RestaurantPayment className="container">
       <RestaurantImage>
@@ -51,7 +51,8 @@ function RestaurantPaymentContainer() {
       <RestaurantProductsContainer>
         <RestaurantProducts>
           <h3>Products</h3>
-          <ProductItem  value={data && data}/>
+          
+          <ProductItem  value={data}/>
         </RestaurantProducts>
         <RestaurantProductsCounter>
           <RestaurantProductsBasket />
