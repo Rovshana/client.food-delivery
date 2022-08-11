@@ -1,4 +1,7 @@
+import ProductItem from "./ProductItem";
 import {
+  DeliveryDiv,
+  GoBackBtn,
   RestaurantImage,
   RestaurantInformation,
   RestaurantInformationLeft,
@@ -8,24 +11,52 @@ import {
   RestaurantProductsContainer,
   RestaurantProductsCounter,
 } from "./RestaurantPayment.styled";
-// import Image from "next/image";
+import RestaurantProductsBasket from "./RestaurantProductsBasket";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+
 function RestaurantPaymentContainer() {
+  const [data, setData] = useState({});
+  const route = useRouter();
+  const state = useSelector((state) => state.RestaurantSlice.restaurants);
+
+  useEffect( () => {
+   
+      let arr =  state.filter((item) => item.name === route.query.name);
+      setData(arr[0]);
+  
+  }, [route.query.name]);
+  
   return (
     <RestaurantPayment className="container">
       <RestaurantImage>
-        <img src="/restaurants/papa.png"  alt="" />
+        <img src={`/restaurants/${data?.image}.png`} alt="" />
       </RestaurantImage>
       <RestaurantInformation>
-      <RestaurantInformationLeft>
-
-      </RestaurantInformationLeft>
-      <RestaurantInformationRight>
-        
+        <RestaurantInformationLeft>
+          <p>{data?.name}</p>
+          <p>{data?.street}</p>
+        </RestaurantInformationLeft>
+        <RestaurantInformationRight>
+          <p>Cuisine</p>
+          <p>{data?.cuisine?.join(",")}</p>
         </RestaurantInformationRight>
+        <DeliveryDiv>
+          <p>{data?.delivery}$</p>
+          <p>Delivery</p>
+        </DeliveryDiv>
+        <GoBackBtn>Go Back</GoBackBtn>
       </RestaurantInformation>
       <RestaurantProductsContainer>
-        <RestaurantProducts></RestaurantProducts>
-        <RestaurantProductsCounter></RestaurantProductsCounter>
+        <RestaurantProducts>
+          <h3>Products</h3>
+          
+          <ProductItem  value={data}/>
+        </RestaurantProducts>
+        <RestaurantProductsCounter>
+          <RestaurantProductsBasket />
+        </RestaurantProductsCounter>
       </RestaurantProductsContainer>
     </RestaurantPayment>
   );

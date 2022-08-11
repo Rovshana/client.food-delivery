@@ -100,7 +100,6 @@ import { Input, Form, Label, Button} from '../Profile/Profile.styled'
     </Form>
   
 
-        
         </div>
     )
 }

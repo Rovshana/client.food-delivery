@@ -1,31 +1,41 @@
 .box {
-  height: 100vh;
-}
-.parent {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 35px;
 }
+
 .card1 {
-  width: 245px;
+  cursor: pointer;
+  width: 250px;
   height: 345.27px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-right: 51px;
+  margin-right: 21px;
   margin-bottom: 30px;
+  padding: 15px;
 
   background: #ffffff;
+}
+.card1 img {
+  display: block;
+  margin: 0 auto;
+  width: 174px;
+  height: 164px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .content {
   color: #828282;
 }
-.parent .card1 .title {
+.box .card1 h2 {
   font-family: "Roboto" sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   color: #4f4f4f;
   margin-bottom: 5px !important;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
 .contentcard {
@@ -34,7 +44,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   margin-right: 23px;
 }
 .red {
@@ -57,7 +67,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #4f4f4f;
 }
 .lastBox {
@@ -68,7 +78,7 @@
 
 /* restaurant sidebar */
 .sidebar {
-  width: 251px;
+  /* width: 251px; */
   background: #f3f4f6;
   padding: 40px 0;
   margin-bottom: 30px;
@@ -79,8 +89,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 18px;
-  margin-right: 27px;
+  /* margin-left: 18px; */
+  /* margin-right: 27px; */
   margin-top: 34px;
   width: 205px;
   height: 40px;
@@ -93,6 +103,7 @@
 }
 
 .type {
+  width: 120px;
   font-family: "Mukta";
   font-style: normal;
   font-weight: 600;

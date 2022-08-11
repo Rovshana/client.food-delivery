@@ -1,136 +1,34 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+import {useRouter} from "next/router"
+function RestaurantCards({categoryRes}) {
+    const route = useRouter();
 
- function RestaurantCards(props) {
     
+  return (
+    <div className="box">
+      {
+        categoryRes.map(item=>(
+            <div onClick={()=>route.push(`restaurants/restaurant?name=${item.name}`)} className="card1" key={item.id}>
+            <div>
+              <img src={`/restaurant/${item.image}.svg`} alt="" />
+            </div>
+            <div>
+              <h2>{item.name}</h2>
+              <p className="contentcard">
+                {item.cuisine.join(',')}
+              </p>
+            </div>
+            <div className="lastBox">
+              <p className="delivery">{item.delivery}$ Delivery</p>
+              <div className="red">{item.time} min</div>
+            </div>
+          </div>
+        ))
+      }
 
-    return (
-        <div  className='box'>
-            <div className='parent'>
-            <div className='card1 '>
-                <div>
-                    <img src='/restaurant/soup.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/burger.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/pizza.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/papajohn.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            
-         
-            </div>
-            <div className='parent'>
-            <div className='card1 '>
-                <div>
-                    <img src='/restaurant/soup.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/burger.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/pizza.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            <div className='card1'>
-                <div>
-                    <img src='/restaurant/papajohn.svg' alt=''/>
-                </div>
-                <div>
-                    <h2 className='title'>Coffee Mania</h2>
-                    <p className='contentcard'>chinese, sea-food, thai, lebanese, caribbean</p>
-                </div>
-                <div className='lastBox'>
-                    <p className='delivery'>$5 Delivery</p>
-                    <div className='red'>09 min</div>
-                </div>
-                
-            </div>
-            
-         
-            </div>
-           
-           
-            
-           
-               
-        </div>
-    )
+    
+    </div>
+  );
 }
- export default RestaurantCards
+export default RestaurantCards;
