@@ -93,6 +93,7 @@
 }
 
 .type {
+  width: 120px;
   font-family: "Mukta";
   font-style: normal;
   font-weight: 600;

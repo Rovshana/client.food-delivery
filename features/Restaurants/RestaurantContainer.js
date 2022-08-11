@@ -15,6 +15,7 @@ function RestaurantsContainer() {
         
         </div>
      );
+
 }
 
 export default RestaurantsContainer;

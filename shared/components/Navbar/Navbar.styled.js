@@ -10,8 +10,10 @@ margin-bottom: 20px;
 margin-top: 30px;
 
 
-width: 100%;
-height: 70px;
+
+/* width: 86%; */
+height: 120px;
+
 background: rgba(243, 244, 246, 1);
 
 /* border: 1px solid orange; */
