@@ -5,7 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
     
 
     return (
-        < div className='box'>
+        <div className='Profilebox'>
         <Formik
        initialValues={{ email: '', password: '' }}
        validate={values => {
