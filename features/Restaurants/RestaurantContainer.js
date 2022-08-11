@@ -3,7 +3,7 @@ import RestaurantCards from "../../shared/components/restaurant/RestaurantCards"
 
 function RestaurantsContainer() {
   return (
-    <div className="container d-flex">
+    <div className="d-flex">
       <div className="col-3">
         <Restaurant />
       </div>
