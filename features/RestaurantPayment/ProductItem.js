@@ -8,15 +8,13 @@ function ProductItem({ value }) {
   const state = useSelector((state) => state.BasketSlices.myBasket);
   const selectProduct = (item) => {
     let arr = [];
-    state.map((basket) => {
-      if (basket.id !== item.id) {
-        // arr.push(...state, item);
-        // dispatch(setBasket(arr));
-        console.log("Sdfsdfdsf");
-      }
+    state.map((item) => {
+      arr.push(item.id);
     });
-
-   
+    
+    if (!arr.includes(item.id)) {
+      dispatch(setBasket(item));
+    }
   };
   return (
     <>

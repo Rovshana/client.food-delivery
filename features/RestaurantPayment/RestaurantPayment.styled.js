@@ -206,3 +206,30 @@ border-bottom: 1px solid #E0E0E0 ;
   margin-right: 10px;
 }
 `
+
+
+export const SelectBasketProduct = styled.div`
+display: flex;
+/* justify-content:space-between; */
+align-items: center;
+padding: 15px;
+& img{
+  margin-right: 35px;
+  width: 50px;
+}
+& p{
+  margin-bottom: 0;
+}
+`
+
+export const SelectBasketProductName = styled.div`
+width: 200px;
+margin-right: 35px;
+
+`
+export const SelectBasketProductCounter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 35px;
+`

@@ -9,13 +9,16 @@ export const BasketSlices = createSlice({
   initialState,
   reducers: {
     setBasket : (state,action)=>{
-    state.myBasket = action.payload;
+    state.myBasket.push(action.payload);
        
+    },
+    setBasketDelete : (state,action)=>{
+state.myBasket = action.payload
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { setBasket } = BasketSlices.actions
+export const { setBasket,setBasketDelete } = BasketSlices.actions
 
 export default BasketSlices.reducer
