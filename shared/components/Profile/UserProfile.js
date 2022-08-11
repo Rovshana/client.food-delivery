@@ -1,44 +1,106 @@
 import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-
+import { useFormik } from 'formik';
+import { Input, Form, Label, Button} from '../Profile/Profile.styled'
  function UserProfile(props) {
-    
+  const formik = useFormik({
+    initialValues: {
+      fullName: '',
+      userName: '',
+      contact: '',
+      email: '',
+      address: ''
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+    validate: (values)=>{
+      let errors = {}
+      if (!values.fullName) {
+        errors.fullName = "Required!";
+      }
+      if(!values.userName){
+        errors.userName = "Required!"
+      }
+      if(!values.contact){
+        errors.contact = "Required!"
+      }
+      if (!values.email) {
+        errors.email = "Required!";
+      } else if (
+        !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(
+          values.email
+        )
+      ) {
+        errors.email = "Please enter a valid email!";
+      }
+      if(!values.address){
+        errors.address = 'Required!'
+      }
+      console.log(errors)
+      return errors
+    }
+  });     
+  
+  return (
+    < div className=' container Profilebox'>
+    <Form onSubmit={formik.handleSubmit}>
+     <div className='myProfileForm'>
+     <Label htmlFor="fullName">Full Name</Label>
+      <Input
+        id="fullName"
+        name="fullName"
+        type="text"
+        placeholder='Rovshana'
+        onChange={formik.handleChange}
+        value={formik.values.fullName}
+      
+      />
+     </div>
+     <div className='myProfileForm'>
+      <Label htmlFor="userName">Username</Label>
+      <Input
+        id="userName"
+        name="userName"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.userName}
+      />
+      </div>
+      <div className='myProfileForm'>
+      <Label htmlFor="contact">Contact</Label>
+      <Input
+        id="contact"
+        name="contact"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.contact}
+      />
+      </div>
+      <div className='myProfileForm'>
+      <Label htmlFor="email">Email Address</Label>
+      <Input
+        id="email"
+        name="email"
+        type="email"
+        onChange={formik.handleChange}
+        value={formik.values.email}
+      />
+      </div>
+      <div className='myProfileForm'>
+      <Label htmlFor="address">Email Address</Label>
+      <Input
+        id="adress"
+        name="address"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.address}
+      />
+      </div>
+      <Button type="submit">Submit</Button>
+    </Form>
+  
 
-    return (
-        < div className='box'>
-        <Formik
-       initialValues={{ email: '', password: '' }}
-       validate={values => {
-         const errors = {};
-         if (!values.email) {
-           errors.email = 'Required';
-         } else if (
-           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-         ) {
-           errors.email = 'Invalid email address';
-         }
-         return errors;
-       }}
-       onSubmit={(values, { setSubmitting }) => {
-         setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
-           setSubmitting(false);
-         }, 400);
-       }}
-     >
-       {({ isSubmitting }) => (
-         <Form>
-           <Field type="email" name="email" />
-           <ErrorMessage name="email" component="div" />
-           <Field type="password" name="password" />
-           <ErrorMessage name="password" component="div" />
-           <button type="submit" disabled={isSubmitting}>
-             Submit
-           </button>
-         </Form>
-       )}
-     </Formik>
-            
+        
         </div>
     )
 }

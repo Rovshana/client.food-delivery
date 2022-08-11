@@ -5,26 +5,26 @@ import Image from 'next/image'
 
     return (
         <>
-        <div>
-            <div>
+        <div className='profileSidebar profileSidebarMobile'>
+            <div className='myDiv'>
                 <Image width='22' height='14' src='/profile/profile.svg' alt='...'/>
-                <p>profile</p>
+                <p className='paragraph'>Profile</p>
             </div>
-            <div>
+            <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p>Your basket</p>
+                <p  className='paragraph'>Your basket</p>
             </div>
-            <div>
+            <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p>Your Orders</p>
+                <p  className='paragraph' >Your Orders</p>
             </div>
-            <div>
+            <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p>Checkout</p>
+                <p  className='paragraph'>Checkout</p>
             </div>
-            <div>
+            <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p>Logout</p>
+                <p  className='paragraph'>Logout</p>
             </div>
         </div>
             
