@@ -16,6 +16,8 @@ import "../styles/about.css";
 import "../styles/how.css";
 import "../styles/restaurant.css";
 import "../styles/langbar.css";
+import "../styles/pagination.css";
+import "../styles/profile.css";
 import "../styles/homefirst.scss";
 
 import "../i18n";
