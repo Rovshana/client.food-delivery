@@ -10,6 +10,7 @@ function RestaurantsContainer() {
   const route = useRouter();
   const state = useSelector((state) => state.RestaurantSlice.restaurants);
   useEffect(() => {
+    setCategoryRes(state)
     if (route.query.category) {
         let arr = state.filter(item=>item.categories.includes(route.query.category))
         setCategoryRes(arr)
