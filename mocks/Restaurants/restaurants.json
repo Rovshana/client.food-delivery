@@ -12,7 +12,7 @@
       {
         "id": 1,
         "name": "Burger",
-        "price": 7.9,
+        "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 8,
         "image": ""
@@ -20,7 +20,7 @@
       {
         "id": 2,
         "name": "Free",
-        "price": 7.9,
+        "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 8,
         "image": ""
@@ -40,7 +40,7 @@
       {
         "id": 1,
         "name": "pizza",
-        "price": 7.9,
+        "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 8,
         "image": ""
@@ -48,7 +48,7 @@
       {
         "id": 2,
         "name": "Free",
-        "price": 7.9,
+        "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 8,
         "image": ""
