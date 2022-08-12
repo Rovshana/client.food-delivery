@@ -14,16 +14,18 @@
         "name": "Burger",
         "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "",
+        "stock": 8
       },
       {
         "id": 2,
         "name": "Free",
         "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "",
+        "stock": 8
       }
     ]
   },
@@ -42,16 +44,18 @@
         "name": "pizza",
         "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "",
+        "stock": 8
       },
       {
         "id": 2,
         "name": "Free",
         "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "",
+        "stock": 8
       }
     ]
   }

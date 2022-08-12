@@ -220,6 +220,16 @@ padding: 15px;
 & p{
   margin-bottom: 0;
 }
+& button{
+  padding: 0;
+  color: #000;
+  background: transparent;
+  margin-bottom: 0;
+  &:disabled{
+    opacity: 0.2;
+
+  }
+}
 `
 
 export const SelectBasketProductName = styled.div`

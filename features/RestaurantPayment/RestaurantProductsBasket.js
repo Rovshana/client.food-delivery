@@ -10,24 +10,32 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
-import { setBasket, setBasketDelete } from "../../store/slices/BasketSlices";
-import { useState } from "react";
+import {
+  setBasket,
+  setBasketDelete,
+  setBasketUpdate,
+} from "../../store/slices/BasketSlices";
+import { useEffect, useState } from "react";
 function RestaurantProductsBasket() {
-  const [count,setCount] = useState(1)
+  const [show, setShow] = useState(0);
   const state = useSelector((state) => state.BasketSlices.myBasket);
   const dispatch = useDispatch();
+
+ 
   const deleteProduct = (id) => {
     let arr = state.filter((item) => item.id !== id);
-    dispatch(setBasketDelete(arr))
+    dispatch(setBasketDelete(arr));
   };
 
-  const increment = ()=>{
-    setCount(prev=>prev+1)
-  }
+  const increment = (id) => {
+    let inc = true;
+    dispatch(setBasketUpdate({ id, inc }));
+  };
 
-  const decrement = ()=>{
-    setCount(prev=>prev - 1)
-  }
+  const decrement = (id) => {
+    let desc = true;
+    dispatch(setBasketUpdate({ id, desc }));
+  };
 
   return (
     <>
@@ -41,12 +49,16 @@ function RestaurantProductsBasket() {
             <img src="/restaurant/burger.svg" alt="" />
             <SelectBasketProductName>
               <p>{item.name}</p>
-              <p>${item.price}0</p>
+              <p>$ {(item.price * item.count).toPrecision(3)}</p>
             </SelectBasketProductName>
             <SelectBasketProductCounter>
-              <AddIcon onClick={()=>increment(item.id)} />
-              <p>{count}</p>
-              <RemoveIcon  onClick={()=>decrement(item.id)} />
+              <button disabled={item.count === item.stock && true} onClick={() => increment(item.id)}>
+                <AddIcon />
+              </button>
+              <p>{item.count}</p>
+              <button disabled={item.count === 1 && true} onClick={() => decrement(item.id)}>
+                <RemoveIcon />
+              </button>
             </SelectBasketProductCounter>
             <DeleteSweepIcon
               onClick={() => deleteProduct(item.id)}
