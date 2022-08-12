@@ -1,27 +1,31 @@
 .MuiButtonBase-root:hover{
     background: #D63626 !important; 
-    color: white !important;
-  
+    color: #fff !important;
+  border-radius: 50%;
 
 }
-.MuiButtonBase-root{
-    margin: 48px 10px;
-}
-/* .MuiButtonBase-root:active{
- 
-} */
+
 .MuiPagination-ul {
     justify-content: center;
     
    
 }
-.MuiButtonBase-root:active{
-   background-color: red;
-    
-}
+
 .MuiTouchRipple-root{
     border: 1px solid  red !important;
     color: red;
+    border-radius: 50%;
     
    
+}
+.MuiButtonBase-root{
+    background: transparent !important; 
+    color: #D63626;
+    padding: 30px;
+    margin: 48px 10px;
+    
+}
+
+.Mui-selected{
+    color: #D63626;
 }

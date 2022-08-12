@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFormik } from 'formik';
+import { Input, Label, Title, Button } from './checkout.styled';
  
  function Checkout(props) {
     const formik = useFormik({
@@ -17,26 +18,34 @@ import { useFormik } from 'formik';
     
           
    return (
-    <div>
+    <div className='checkoutcontainer'>
+      <Title>Checkout</Title>
      <form onSubmit={formik.handleSubmit}>
-       <label htmlFor="deliveryAddress">Delivery Address</label>
-       <input
+      <div className='checkoutForm'>
+       <Label htmlFor="deliveryAddress">Delivery Address</Label>
+       <Input
          id="deliveryAddress"
          name="firstName"
          type="text"
          onChange={formik.handleChange}
          value={formik.values.deliveryAddress}
        />
-       <label htmlFor="ContactNumber">Contact  Number</label>
-       <input
+       </div>
+       <div className='checkoutForm'>
+       <Label htmlFor="ContactNumber">Contact  Number</Label>
+       <Input
          id="contactNumber"
          name="ContactNumber"
          type="text"
          onChange={formik.handleChange}
          value={formik.values.contactNumber}
        />
+       </div>
        
-       <button type="submit">Submit</button>
+     
+       <div className='checkoutForm'>
+       <Button type="submit">Checkout</Button>
+       </div>
      </form> 
      </div>
     )

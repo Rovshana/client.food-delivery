@@ -12,8 +12,11 @@ import ProfileSidebar from '../../shared/components/Profile/ProfileSidebar'
                 <ProfileSidebar/>
 
             </div>
-            <div className='col-9'>
+            <div className='col-6'>
                 <Checkout/>
+            </div>
+            <div className='col-3'>
+                
             </div>
         </div>
             

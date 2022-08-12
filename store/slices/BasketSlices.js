@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   myBasket: [],
+  result:0
 };
 
 export const BasketSlices = createSlice({
@@ -15,7 +16,7 @@ export const BasketSlices = createSlice({
       state.myBasket = action.payload;
     },
     setBasketUpdate: (state, action) => {
-      console.log(action.payload);
+      
       state.myBasket.map((item) => {
         if (action.payload.inc && item.id === action.payload.id) {
           item.count++;
@@ -26,11 +27,16 @@ export const BasketSlices = createSlice({
         }
       });
     },
+    setResult:(state, action)=>{
+   
+      state.result = action.payload
+    }
   },
+
 });
 
 // Action creators are generated for each case reducer function
-export const { setBasketUpdate, setBasket, setBasketDelete } =
+export const {setResult, setBasketUpdate, setBasket, setBasketDelete } =
   BasketSlices.actions;
 
 export default BasketSlices.reducer;

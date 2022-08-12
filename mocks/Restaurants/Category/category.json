@@ -2,31 +2,31 @@
   {
     "id": 1,
     "name": "Chinese",
-    "image": ""
+    "image": "sushi.jpg"
   },
   {
     "id": 2,
     "name": "Sea Food",
-    "image": ""
+    "image": "Plateau_van_zeevruchten.jpg"
   },
   {
     "id": 3,
     "name": "Fast Food",
-    "image": ""
+    "image": "fast.webp"
   },
   {
     "id": 4,
     "name": "Pizza",
-    "image": ""
+    "image": "pizza.jpg"
   },
   {
     "id": 5,
     "name": "Indian",
-    "image": ""
+    "image": "indian-foods.jpg"
   },
   {
     "id": 6,
     "name": "Kebab",
-    "image": ""
+    "image": "kebab.jpg"
   }
 ]
