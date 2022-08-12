@@ -31,7 +31,7 @@ function RestaurantPaymentContainer() {
   return (
     <RestaurantPayment className="container">
       <RestaurantImage>
-        <img src={`/restaurants/${data?.image}.png`} alt="" />
+        <img src={`/restaurant/${data?.image}`} alt="" />
       </RestaurantImage>
       <RestaurantInformation>
         <RestaurantInformationLeft>
