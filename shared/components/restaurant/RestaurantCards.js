@@ -11,7 +11,7 @@ function RestaurantCards({categoryRes}) {
         categoryRes.map(item=>(
             <div onClick={()=>route.push(`restaurants/restaurant?name=${item.name}`)} className="card1" key={item.id}>
             <div>
-              <img src={`/restaurant/${item.image}.svg`} alt="" />
+              <img src={`/restaurant/products/${item.image}.svg`} alt="" />
             </div>
             <div>
               <h2>{item.name}</h2>

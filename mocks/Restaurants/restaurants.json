@@ -15,8 +15,9 @@
         "price": 7.90,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 8,
-        "image": ""
+        "image": "burger.svg "
       },
+
       {
         "id": 2,
         "name": "Free",
