@@ -36,6 +36,29 @@ border: none;
 }
 
 `
+
+export const InputRadio = styled.input`
+background: #FFFFFF;
+border: 1px solid #6FCF97;
+border-radius: 100px;
+width: 30px;
+height: 30px;
+
+
+`
+export const LabelRadio = styled.label`
+display: inline-block;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #6FCF97;
+margin-left: 10px;
+margin: 0 auto;
+vertical-align: middle !important;
+
+`
 export const Button = styled.button`
 width: 90%;
 height: 53px;

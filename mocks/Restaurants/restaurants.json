@@ -6,7 +6,7 @@
     "delivery": 5,
     "time": 30,
     "categories": ["Fast food", "Pizza"],
-    "image": "",
+    "image": "papajohn.svg",
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
       {
