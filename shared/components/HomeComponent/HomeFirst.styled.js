@@ -12,7 +12,9 @@ export const Header = styled.header`
     margin-left: 0;
   margin-right: 0;
     height: auto;
+    margin-top: 0;
     margin-bottom: 24px;
+    padding: 10px;
   }
 `;
 
