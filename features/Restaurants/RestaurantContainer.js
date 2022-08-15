@@ -14,6 +14,9 @@ function RestaurantsContainer() {
         let arr = state.filter(item=>item.categories.includes(route.query.category))
         setCategoryRes(arr)
     }
+    else{
+      setCategoryRes(state)
+    }
 
   },[route.query.category])
 
@@ -23,7 +26,7 @@ function RestaurantsContainer() {
         <div className="col-2">
         <Restaurant />
         </div >
-        <div className="col-10">
+        <div className="col-10 mx-5">
         <RestaurantCards categoryRes = {categoryRes}/>
         <CirclePagination/>
         </div>

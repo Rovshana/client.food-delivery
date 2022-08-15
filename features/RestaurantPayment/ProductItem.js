@@ -9,19 +9,19 @@ function ProductItem({ value }) {
   const selectProduct = (item) => {
     let arr = [];
     state.map((item) => {
-      arr.push(item.id);
+      arr.push(item.name);
     });
     
-    if (!arr.includes(item.id)) {
+    if (!arr.includes(item.name)) {
       dispatch(setBasket(item));
     }
   };
   return (
     <>
       {value.products?.map((item) => (
-        <ProductItemStyle key={item.id}>
+        <ProductItemStyle key={item.name}>
           <Image
-            src={`/restaurant/${item.image}.svg`}
+            src={`/restaurant/products/${item.image}`}
             width={57}
             height={53}
             alt=""

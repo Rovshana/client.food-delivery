@@ -7,24 +7,29 @@
     "time": 30,
     "categories": ["Fast food", "Pizza"],
     "image": "papajohn.svg",
+
+    
+
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
       {
         "id": 1,
         "name": "Burger",
-        "price": 7.90,
+        "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": "burger.svg "
+        "count": 1,
+        "stock": 8,
+        "image": "burger.jpg"
       },
 
       {
         "id": 2,
         "name": "Free",
-        "price": 7.90,
+        "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "free.webp",
+        "stock": 8
       }
     ]
   },
@@ -34,25 +39,160 @@
     "cuisine": ["chinese", "sea-food", "thai", "lebanese", "caribbean"],
     "delivery": 8,
     "time": 30,
-    "categories": ["Fast food", "Pizza", "Sea Food"],
-    "image": "",
+    "categories": ["Fast Food", "Pizza", "Sea Food"],
+    "image": "Papa.svg",
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
       {
         "id": 1,
         "name": "pizza",
-        "price": 7.90,
+        "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "pizza.webp",
+        "stock": 8
       },
       {
         "id": 2,
         "name": "Free",
-        "price": 7.90,
+        "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-        "count": 8,
-        "image": ""
+        "count": 1,
+        "image": "free.webp",
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "McDonald`s",
+    "cuisine": ["fast food", "cheese", "burger"],
+    "delivery": 10,
+    "time": 22,
+    "categories": ["Fast Food", "Pizza","Burger"],
+    "image": "mcdonalds.webp",
+    "street": "19 Nizami street, Sabail, Baku",
+    "products": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "stock": 8,
+        "image": "burger.jpg"
+      },
+
+      {
+        "id": 2,
+        "name": "Free",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "image": "free.webp",
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Adana Kebab House",
+    "cuisine": ["kebab","ayran","ciyer"],
+    "delivery": 10,
+    "time": 22,
+    "categories": ["Kebab"],
+    "image": "kebabRes.jpg",
+    "street": "19 Nizami street, Sabail, Baku",
+    "products": [
+      {
+        "id": 1,
+        "name": "Toyuq-sis",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "stock": 8,
+        "image": "tavuk-kebab.jpg"
+      },
+
+      {
+        "id": 2,
+        "name": "Ciyer",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "image": "ciyer-kebab.jpg",
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Lanterns",
+    "cuisine": ["indian","indian","indian"],
+    "delivery": 10,
+    "time": 22,
+    "categories": ["Indian"],
+    "image": "lanterns.webp",
+    "street": "19 Nizami street, Sabail, Baku",
+    "products": [
+      {
+        "id": 1,
+        "name": "Rice",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "stock": 8,
+        "image": "rice.jpg"
+      },
+
+      {
+        "id": 2,
+        "name": "Rice-tomato",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "image": "rice-tomato.webp",
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Miso Honi",
+    "cuisine": ["Chinese","Chinese","Chinese"],
+    "delivery": 10,
+    "time": 22,
+    "categories": ["Chinese"],
+    "image": "miso.jpg",
+    "street": "19 Nizami street, Sabail, Baku",
+    "products": [
+      {
+        "id": 1,
+        "name": "Karides",
+        "price": 12.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "stock": 8,
+        "image": "karides.jpg"
+      },
+
+      {
+        "id": 2,
+        "name": "Sushi",
+        "price": 9.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "image": "sushi.webp",
+        "stock": 8
+      },
+      {
+        "id": 3,
+        "name": "Yengec",
+        "price": 7.9,
+        "desc": "Prepared with a patty, a slice of cheese and special sauce",
+        "count": 1,
+        "image": "yengec.jpg",
+        "stock": 8
       }
     ]
   }
