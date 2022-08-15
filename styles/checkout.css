@@ -3,7 +3,66 @@
     background: #F3F4F6;
 border-radius: 5px;
 margin-left: 17px;
+margin-right: 16px;
 }
 .checkoutForm{
     margin-left: 39px;
+}
+
+.orderContainer{
+    width: 100%;
+    background: #F3F4F6;
+    margin-left: 40px;
+}
+.ordertitle{
+    font-family: 'Roboto'sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 70px;
+color: #828282;
+text-align: center;
+color: #828282;
+}
+.orderParentofSpanS{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.orderNum{
+    margin-right: 3px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #828282;
+
+}
+.orderContent1{
+    margin-right: 30px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+
+
+color: #828282;
+}
+
+.orderPrice{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #828282;
+
+
+}
+.orderRadio{
+    display: flex;
+    justify-content: center;
+  
+}
+.spanBorder{
+    border-bottom: 1px solid red;
 }

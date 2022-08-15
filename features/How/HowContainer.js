@@ -8,7 +8,7 @@ import Footer from "../../shared/components/Footer/Footer";
         <>
         
           <HowitWorks/>  
-          <Footer/>
+         
         </>
     )
 }
