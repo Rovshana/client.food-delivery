@@ -14,7 +14,8 @@ export const RestaurantSlice = createSlice({
     },
     setCategory : (state,action)=>{
         state.categories = action.payload
-    }
+    },
+    
   },
 })
 
