@@ -5,8 +5,11 @@
     "cuisine": ["chinese", "sea-food", "thai", "lebanese", "caribbean"],
     "delivery": 5,
     "time": 30,
-    "categories": ["Fast Food", "Pizza","Burger"],
-    "image": "Burger-king.jpg",
+    "categories": ["Fast food", "Pizza"],
+    "image": "papajohn.svg",
+
+    
+
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
       {
