@@ -3,7 +3,6 @@ import "../styles/globals.css";
 import "../styles/login.css";
 import "../styles/footer.css";
 import "../styles/home.css";
-import "../styles/about.css";
 import "../styles/langbar.css";
 import "../styles/question.css";
 import "../styles/homefirst.scss";
@@ -12,7 +11,7 @@ import "../styles/globals.css";
 import "../styles/login.css";
 import "../styles/footer.css";
 import "../styles/home.css";
-import "../styles/about.css";
+
 import "../styles/how.css";
 import "../styles/restaurant.css";
 import "../styles/langbar.css";
@@ -20,7 +19,9 @@ import "../styles/pagination.css";
 import "../styles/profile.css";
 import "../styles/checkout.css";
 import "../styles/homefirst.scss";
-
+import "../styles/about.css";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 import "../i18n";
 import Layout from "../features/Layout/Layout";
 import { store } from "../store";
@@ -32,6 +33,19 @@ function MyApp({ Component, pageProps }) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        {/* Same as */}
+        <ToastContainer />
       </Provider>
     </>
   );

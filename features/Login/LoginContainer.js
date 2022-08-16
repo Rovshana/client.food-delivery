@@ -24,6 +24,7 @@ function LoginContainer() {
     <div className="container-fluid my-3 login-base" style={{overflowY:"hidden"}}>
         <LoginHeader/>
         <LoginBody />
+        
     </div>
   );
 }
