@@ -72,6 +72,7 @@ color: #828282;
 
 }
 
+
 .total{
     font-family: 'Roboto' sans-serif;
 font-style: normal;
@@ -130,4 +131,13 @@ font-size: 30px;
 line-height: 35px;
 color: #4F4F4F;
 text-align: center;
+}
+
+/* mobile design's codes which I've used them in checkoutContainer */
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .checkoutMobile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }
