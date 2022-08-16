@@ -5,9 +5,7 @@ border-radius: 5px;
 margin-left: 17px;
 margin-right: 16px;
 }
-.checkoutForm{
-    margin-left: 39px;
-}
+
 
 .orderContainer{
     width: 100%;
@@ -31,12 +29,17 @@ color: #828282;
 }
 .orderNum{
     margin-right: 3px;
-    font-family: 'Roboto';
+    font-family: 'Roboto' sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 color: #828282;
 
+}
+.orderParent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
 }
 .orderContent1{
     margin-right: 30px;
@@ -44,6 +47,7 @@ color: #828282;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+
 
 
 color: #828282;
@@ -58,11 +62,72 @@ color: #828282;
 
 
 }
+
+.spanBorder{
+    border: 1px solid #E0E0E0;
+   display: block;
+   margin-top: 27px;
+   margin-bottom: 31px;
+   width: 300px;
+
+}
+
+.total{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #828282;
+letter-spacing: 0.03em;
+}
+.price{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #828282;
+}
+
+/* checkout part I mean radio Inputs and labels */
+ .checkoutInfo{
+    margin-left: 39px;
+ }
 .orderRadio{
     display: flex;
     justify-content: center;
   
+  
+} 
+.checkoutForm{
+    margin-left: 39px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
-.spanBorder{
-    border-bottom: 1px solid red;
+
+.checkoutTrue{
+    width: 100%;
+    background: #F3F4F6;
+    margin-left: 17px;
+   
+
+}
+.checkContainer{
+    display: flex;
+    justify-content: center;
+   padding-top: 74px;
+}
+.checkparagraphDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.paragraph{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+color: #4F4F4F;
+text-align: center;
 }

@@ -10,24 +10,50 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
-import { setBasket, setBasketDelete } from "../../store/slices/BasketSlices";
-import { useState } from "react";
+import {
+  setBasketDelete,
+  setBasketUpdate,
+  setResult,
+} from "../../store/slices/BasketSlices";
+import { useEffect } from "react";
 function RestaurantProductsBasket() {
-  const [count,setCount] = useState(1)
   const state = useSelector((state) => state.BasketSlices.myBasket);
+  const result = useSelector((state) => state.BasketSlices.result);
+  
   const dispatch = useDispatch();
-  const deleteProduct = (id) => {
-    let arr = state.filter((item) => item.id !== id);
-    dispatch(setBasketDelete(arr))
+
+  useEffect(() => {
+    let arr = [];
+    let result = 0;
+    state.map((item) => {
+      arr.push((item.price * item.count).toPrecision(3));
+    });
+    for (const item of arr) {
+      result += +item;
+    }
+
+    dispatch(setResult(result.toPrecision(3)));
+
+
+    
+  }, [state]);
+
+  // console.log(show);
+
+  const deleteProduct = (name) => {
+    let arr = state.filter((item) => item.name !== name);
+    dispatch(setBasketDelete(arr));
   };
 
-  const increment = ()=>{
-    setCount(prev=>prev+1)
-  }
+  const increment = (id) => {
+    let inc = true;
+    dispatch(setBasketUpdate({ id, inc }));
+  };
 
-  const decrement = ()=>{
-    setCount(prev=>prev - 1)
-  }
+  const decrement = (id) => {
+    let desc = true;
+    dispatch(setBasketUpdate({ id, desc }));
+  };
 
   return (
     <>
@@ -37,19 +63,29 @@ function RestaurantProductsBasket() {
       </ItemsDiv>
       {state.length !== 0 ? (
         state.map((item) => (
-          <SelectBasketProduct key={item.id}>
-            <img src="/restaurant/burger.svg" alt="" />
+          <SelectBasketProduct key={item.name}>
+            <img src={`/restaurant/products/${item.image}`} alt="" />
             <SelectBasketProductName>
               <p>{item.name}</p>
-              <p>${item.price}0</p>
+              <p>$ {(item.price * item.count).toPrecision(3)}</p>
             </SelectBasketProductName>
             <SelectBasketProductCounter>
-              <AddIcon onClick={()=>increment(item.id)} />
-              <p>{count}</p>
-              <RemoveIcon  onClick={()=>decrement(item.id)} />
+              <button
+                disabled={item.count === item.stock && true}
+                onClick={() => increment(item.id)}
+              >
+                <AddIcon />
+              </button>
+              <p>{item.count}</p>
+              <button
+                disabled={item.count === 1 && true}
+                onClick={() => decrement(item.id)}
+              >
+                <RemoveIcon />
+              </button>
             </SelectBasketProductCounter>
             <DeleteSweepIcon
-              onClick={() => deleteProduct(item.id)}
+              onClick={() => deleteProduct(item.name)}
               style={{ alignSelf: "flex-start" }}
             />
           </SelectBasketProduct>
@@ -64,7 +100,7 @@ function RestaurantProductsBasket() {
 
       <button style={{ background: state.length > 0 && "red" }}>
         Checkout
-        <span style={{ color: state.length > 0 && "red" }}>$0.00</span>
+        <span style={{ color: state.length > 0 && "red" }}>${result}</span>
       </button>
     </>
   );

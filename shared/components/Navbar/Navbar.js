@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import {
+  BasketDiv,
   Button1,
   Button2,
   LangSignDiv,
@@ -17,6 +18,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
 const lngs = {
   az: { nativeName: "Az" },
   en: { nativeName: "En" },
@@ -43,6 +45,7 @@ function Navbar(props) {
   };
   // router
   const route = useRouter();
+  const state = useSelector((state) => state.BasketSlices.myBasket)
 
   return (
     <>
@@ -86,7 +89,13 @@ function Navbar(props) {
               ))}
             </DropdownMenu>
           </Dropdown>
-          {myLocal && <img src="/login/sebet.svg" />}
+          {myLocal && (
+            <BasketDiv>
+             <span>{state.length}</span>
+            <img src="/login/sebet.svg"/>
+           
+            </BasketDiv>
+          ) }
 
           {!myLocal ? (
             <Button2>Sign up</Button2>

@@ -50,47 +50,51 @@ import { Input, Form, Label, Button} from '../Profile/Profile.styled'
         id="fullName"
         name="fullName"
         type="text"
-        placeholder='Rovshana'
+        placeholder='Rovshana Rzayeva'
         onChange={formik.handleChange}
         value={formik.values.fullName}
       
       />
      </div>
      <div className='myProfileForm'>
-      <Label htmlFor="userName">Username</Label>
-      <Input
-        id="userName"
-        name="userName"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.userName}
-      />
-      </div>
-      <div className='myProfileForm'>
-      <Label htmlFor="contact">Contact</Label>
-      <Input
-        id="contact"
-        name="contact"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.contact}
-      />
-      </div>
-      <div className='myProfileForm'>
-      <Label htmlFor="email">Email Address</Label>
+      <Label htmlFor="email">Email</Label>
       <Input
         id="email"
         name="email"
         type="email"
+        placeholder='rzayeva@gmail.com'
         onChange={formik.handleChange}
         value={formik.values.email}
       />
       </div>
       <div className='myProfileForm'>
-      <Label htmlFor="address">Email Address</Label>
+      <Label htmlFor="userName">Username</Label>
       <Input
-        id="adress"
+        id="userName"
+        name="userName"
+        type="text"
+        placeholder=' rovshana'
+        onChange={formik.handleChange}
+        value={formik.values.userName}
+      />
+      </div>
+      <div className='myProfileForm'>
+      <Label htmlFor="text"> Address</Label>
+      <Input
+        id="address"
         name="address"
+        type="text"
+        placeholder='address'
+        onChange={formik.handleChange}
+        value={formik.values.address}
+      />
+      </div>
+      <div className='myProfileForm'>
+      <Label htmlFor="address">Contact</Label>
+      <Input
+        id="contact"
+        name="contact"
+        placeholder=' +994'
         type="text"
         onChange={formik.handleChange}
         value={formik.values.address}
