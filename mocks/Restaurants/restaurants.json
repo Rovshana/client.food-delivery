@@ -5,11 +5,18 @@
     "cuisine": ["chinese", "sea-food", "thai", "lebanese", "caribbean"],
     "delivery": 5,
     "time": 30,
+<<<<<<< HEAD
+
+    "categories": ["Fast food", "Pizza"],
+    "image": "papajohn.svg",
+
+=======
     "categories": ["Fast food", "Pizza"],
     "image": "papajohn.svg",
 
     
 
+>>>>>>> 145651c4abaf14717adf0b94506f95c59a668d03
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
       {
@@ -196,4 +203,5 @@
       }
     ]
   }
+
 ]
