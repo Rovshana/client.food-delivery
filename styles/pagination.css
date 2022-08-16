@@ -1,16 +1,3 @@
-.MuiButtonBase-root:hover{
-    background: #D63626 !important; 
-    color: #fff !important;
-  border-radius: 50%;
-
-}
-
-.MuiPagination-ul {
-    justify-content: center;
-    
-   
-}
-
 .MuiTouchRipple-root{
     border: 1px solid #D63626 !important;
     color: red;
@@ -18,6 +5,35 @@
     
    
 }
+.MuiPaginationItem-root.Mui-selected {
+    color: #D63626 !important;
+    border-radius: 50%;
+}
+.MuiPaginationItem-root.Mui-selected:hover {
+    color: #D63626 !important;
+    border-radius: 50%;
+}
+.MuiPaginationItem-root.Mui-selected:hover {
+    background: #D63626 !important; 
+    color: #fff !important;
+  border-radius: 50%;
+}
+
+/* .MuiButtonBase-root:hover{
+    background: #D63626 !important; 
+    color: #fff !important;
+  border-radius: 50%;
+
+} */
+
+
+.MuiPagination-ul {
+    justify-content: center;
+    
+   
+}
+
+
 .MuiButtonBase-root{
     background: none !important; 
     
