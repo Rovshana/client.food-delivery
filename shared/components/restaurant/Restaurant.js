@@ -27,10 +27,9 @@ function Restaurant() {
             className="categoryImg"
           />
 
-        <div onClick={()=>route.push(`?category=${category.name}`)} className="parent2" key={category.id}>
-
-
+        <div onClick={()=>route.push(`?category=${category.name}`)}  key={category.id}>
           <p className="type">{category.name}</p>
+        </div>
         </div>
       ))}
     </div>
