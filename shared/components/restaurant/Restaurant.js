@@ -13,6 +13,7 @@ function Restaurant() {
         <p className="type">All</p>
       </div>
       {state?.map((category) => (
+
         <div
           onClick={() => route.push(`?category=${category.name}`)}
           className="parent2"
@@ -25,6 +26,9 @@ function Restaurant() {
             alt=""
             className="categoryImg"
           />
+
+        <div onClick={()=>route.push(`?category=${category.name}`)} className="parent2" key={category.id}>
+
 
           <p className="type">{category.name}</p>
         </div>

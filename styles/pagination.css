@@ -1,5 +1,5 @@
 .MuiTouchRipple-root{
-    border: 1px solid  red !important;
+    border: 1px solid #D63626 !important;
     color: red;
     border-radius: 50%;
     
@@ -35,7 +35,8 @@
 
 
 .MuiButtonBase-root{
-    background: transparent !important; 
+    background: none !important; 
+    
     color: #D63626;
     padding: 30px;
     margin: 48px 10px;
@@ -44,4 +45,11 @@
 
 .Mui-selected{
     color: #D63626;
+}
+.MuiButtonBase-root {
+    width:64px;
+    height: 64px;
+    color: #D63626;
+    font-weight: 800;
+font-size: 18px;
 }

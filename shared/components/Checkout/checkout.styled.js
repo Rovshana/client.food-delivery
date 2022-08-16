@@ -55,8 +55,9 @@ font-size: 14px;
 line-height: 24px;
 color: #6FCF97;
 margin-left: 10px;
-margin: 0 auto;
-vertical-align: middle !important;
+margin-bottom: 52px;
+
+
 
 `
 export const Button = styled.button`
