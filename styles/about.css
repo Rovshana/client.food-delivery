@@ -1,93 +1,170 @@
-
-.left{
-    width: 40%;
+.about-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 81px 0;
+}
+.about-left .title {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 30px;
+  margin-bottom: 31px;
+  color: #000000;
+  text-align: left;
 }
 
-.main{
-    display: flex;
-    justify-content: space-between;
+.about-left .content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #828282;
+  text-align: left;
 }
-.left.title{
-    font-family: 'Mukta';
-font-style: normal;
-font-weight: 600;
-font-size: 45px;
-line-height: 30px;
-margin-bottom: 31px;
-color: #000000;
+/* css for animation */
 
+.about-right {
+  position: relative;
+}
+.about-right .title {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #4f4f4f;
 }
 
-.content{
-    font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 35px;
-color: #828282;
-}
-   /* css for animation */
+.about-right .burger {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  width: 274px;
+  height: 174px;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
 
-   .burger{
-    width: 274px;
-height: 174px;
-box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
-border-radius: 20px;
-background: #FFFFFF;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
-position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   z-index: 6;
-  
- 
- 
-
-
-
-   }
-   .photo{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 25px;
-    border: 1px solid orange;
-   }
-
-   .title{
-    font-family: 'Mukta';
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 30px;
-color: #4F4F4F;
-
-   }
-
-   /* // coffee */
-   .coffee{
-    width: 274px;
-height: 177px;
-box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
-border-radius: 20px;
-background: #FFFFFF;
-    
-   }
-.pizza{
-    position:absolute;
-    top: 0;
-
-    bottom: -20%;
-
-    width: 274px;
-height: 171px;
-box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
-border-radius: 20px;
-background: #FFFFFF;
-
 }
-   
+.about-right .photo {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 120px;
+  /* height: 50px; */
+  object-fit: cover;
+  margin-right: 25px;
+  /* border: 1px solid orange; */
+}
+
+/* // coffee */
+.about-right .coffee {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  width: 274px;
+  height: 174px;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+  z-index: 6;
+}
+.about-right .pizza {
+  position: absolute;
+  top: 32%;
+  left: 30px;
+  width: 274px;
+  height: 174px;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+  z-index: 6;
+}
+
+.about-right .soup {
+  position: absolute;
+  top: 44%;
+  right: -15px;
+  width: 274px;
+  height: 174px;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+  z-index: 6;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .about-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-left {
+    height: 450px;
+  }
+  .about-left .title {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .about-left .content {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .about-right {
+    position: relative;
+  }
+  .about-right .photoBackground {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-right .title {
+    font-family: "Mukta";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #4f4f4f;
+  }
+
+  .about-right .burger {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    width: 230px;
+    height: 144px;
+  }
+  .about-right .photo {
+    width: 100px;
+    top: -40px;
+  }
+  .about-right .soup {
+    top: 53%;
+    right: 47px;
+    width: 230px;
+    height: 144px;
+  }
+}

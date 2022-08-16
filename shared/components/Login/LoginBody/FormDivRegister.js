@@ -5,34 +5,26 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { usersApi, usersPostApi } from "../../../../api/login";
-import { setUsers } from "../../../../store/slices/LoginSlices";
-
+import { loginHandle } from "../../../../store/slices/LoginSlices";
+import { register } from "../../../../firebase.js";
+import { useRouter } from "next/router";
 function FormDiv({ value }) {
-  const [showBtn, setShowBtn] = useState(false);
+  const route = useRouter();
   const dispatch = useDispatch();
-  const state = useSelector((state) => state.LoginSlices.users);
   const [show, setShow] = useState(true);
   const formik = useFormik({
     initialValues: {
       username: "",
-      email:"",
+      email: "",
       fullname: "",
       password: "",
     },
-    onSubmit: (values) => {
-    
-        const val = {
-          id: Date.now(),
-          ...values,
-        };
-        usersPostApi(val).then((res) => {
-          if (res.status === 201) {
-            let data = [...state, val];
-            dispatch(setUsers(data));
-          }
-        });
-      
-    
+    onSubmit: async (values) => {
+      const user = await register(values.email, values.password);
+      if (user) {
+        dispatch(loginHandle({user,values}));
+        route.push("/");
+      }
     },
     validate: (values) => {
       let errors = {};
@@ -49,30 +41,23 @@ function FormDiv({ value }) {
         errors.email = "Invalid email format!";
       }
 
-      state.map((item) => {
-        if (item.email === values.email) {
-          errors.email = "Eynidi";
-        }
-      });
-
       return errors;
     },
   });
   return (
     <MyFrom onSubmit={formik.handleSubmit}>
-     
-        <div className="form-group mb-3">
-          <label htmlFor="fullname">Full Name</label>
-          <input
-            id="fullname"
-            name="fullname"
-            type="text"
-            className="form-control"
-            onChange={formik.handleChange}
-            value={formik.values.fullname}
-          />
-        </div>
-  
+      <div className="form-group mb-3">
+        <label htmlFor="fullname">Full Name</label>
+        <input
+          id="fullname"
+          name="fullname"
+          type="text"
+          className="form-control"
+          onChange={formik.handleChange}
+          value={formik.values.fullname}
+        />
+      </div>
+
       <div className="form-group mb-3">
         <label htmlFor="username">User Name</label>
         <input
@@ -88,22 +73,21 @@ function FormDiv({ value }) {
         )}
       </div>
 
+      <div className="form-group mb-3">
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          className="form-control"
+          onChange={formik.handleChange}
+          value={formik.values.email}
+        />
+        {formik.errors.email && (
+          <div className="error">{formik.errors.email}</div>
+        )}
+      </div>
 
-        <div className="form-group mb-3">
-          <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            className="form-control"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-          />
-          {formik.errors.email && (
-            <div className="error">{formik.errors.email}</div>
-          )}
-        </div>
- 
       <div className="form-group mb-3">
         <label htmlFor="password">Password</label>
         <input
@@ -115,14 +99,12 @@ function FormDiv({ value }) {
           value={formik.values.password}
         />
 
-     
-          <VisibilityOffIcon
-            onClick={() => {
-              setShow(!show);
-            }}
-            className="passwordIcon"
-          />
-       
+        <VisibilityOffIcon
+          onClick={() => {
+            setShow(!show);
+          }}
+          className="passwordIcon"
+        />
       </div>
 
       <button type="submit">Register</button>

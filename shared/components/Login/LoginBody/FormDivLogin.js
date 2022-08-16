@@ -5,39 +5,37 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { usersApi, usersPostApi } from "../../../../api/login";
-import { setUsers } from "../../../../store/slices/LoginSlices";
 import {useRouter} from "next/router"
+import { login } from "../../../../firebase";
+import { loginHandle } from "../../../../store/slices/LoginSlices";
 function FormDiv({ value }) {
-  const [showBtn, setShowBtn] = useState(false);
-const route = useRouter();
-  const state = useSelector((state) => state.LoginSlices.users);
-  console.log(state);
+  const route = useRouter();
+
   const [show, setShow] = useState(true);
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
 
-        state.map(item=>{
-            if (values.username.toLowerCase() === item.username.toLowerCase() && values.password === item.password) {
-                
-                route.push("/")
-                localStorage.setItem("user",values.username);
-            }
-            else{
-                console.log("giris ugursuzd");
-            }
-        })
-
-
+      const user = await login(values.email,values.password);
+      if (user) {
+        dispatch(loginHandle({user,values}));
+        route.push("/");
+      }
     },
 
     validate: (values) => {
       let errors = {};
-      if (!values.username) {
-        errors.username = "Required!";
+      if (!values.email) {
+        errors.email = "Required!";
+      } else if (
+        !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(
+          values.email
+        )
+      ) {
+        errors.email = "Invalid email format!";
       }
 
       return errors;
@@ -45,23 +43,21 @@ const route = useRouter();
   });
   return (
     <MyFrom onSubmit={formik.handleSubmit}>
-     
       <div className="form-group mb-3">
-        <label htmlFor="username">User Name</label>
+        <label htmlFor="email">Email</label>
         <input
-          id="username"
-          name="username"
-          type="text"
+          id="email"
+          name="email"
+          type="email"
           className="form-control"
           onChange={formik.handleChange}
-          value={formik.values.username}
+          value={formik.values.email}
         />
-        {formik.errors.username && (
-          <div className="error">{formik.errors.username}</div>
+        {formik.errors.email && (
+          <div className="error">{formik.errors.email}</div>
         )}
       </div>
 
-    
       <div className="form-group mb-3">
         <label htmlFor="password">Password</label>
         <input
@@ -72,8 +68,6 @@ const route = useRouter();
           onChange={formik.handleChange}
           value={formik.values.password}
         />
-
-       
       </div>
 
       <button type="submit">Login</button>

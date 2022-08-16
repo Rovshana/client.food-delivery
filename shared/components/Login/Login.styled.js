@@ -28,6 +28,10 @@ width: 100%;
 
 /* height: calc(100vh - 180px); */
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    flex-direction: column;
+}
+
 `
 
 export const LoginBodyLeft = styled.div`
@@ -37,16 +41,31 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    
+}
 `
 
 export const LoginImageDiv = styled.div`
-     /* height: 700px; */
+   @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    height: 150px;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
     
 `
 
 export const LoginBodyRight = styled.div`
      width: 50%;
-   
+     @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    background: transparent !important;
+    
+}
 `
 
 
@@ -59,6 +78,10 @@ export const LoginFormDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (min-width: 320px) and (max-width: 576px) {
+        background: transparent;
+    
+}
 `
 
 export const FormBtns = styled.div`
@@ -110,5 +133,19 @@ text-align: center;
 color:#fff;
 padding: 17px 0;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    padding: 0;
 
+    & input{
+        padding:5px;
+    }
+    & label{
+        font-size:14px;
+    }
+
+    & button{
+        padding: 5px 0;
+        font-size:18px;
+    }
+}
 `

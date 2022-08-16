@@ -50,7 +50,7 @@ function HomeFirst(props) {
             duration:3,
             repeat:Infinity,
           }}
-          className="pizza">
+          className="pizzaHome">
             <img src="/pizza.svg" alt="pizza" />
             <p>Pizza Hut Yummy ...</p>
           </motion.div>
