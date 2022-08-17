@@ -1,143 +1,172 @@
-.checkoutcontainer{
-    width: 100%;
-    background: #F3F4F6;
-border-radius: 5px;
-margin-left: 17px;
-margin-right: 16px;
+.checkoutMobile{
+    margin:30px auto;
+    /* height: 600px; */
 }
 
-
-.orderContainer{
-    width: 100%;
-    background: #F3F4F6;
-    margin-left: 40px;
-}
-.ordertitle{
-    font-family: 'Roboto'sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 70px;
-color: #828282;
-text-align: center;
-color: #828282;
-}
-.orderParentofSpanS{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 22px;
-}
-.orderNum{
-    margin-right: 3px;
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-color: #828282;
-
-}
-.orderParent{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
-}
-.orderContent1{
-    margin-right: 30px;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-
-
-
-color: #828282;
+.checkoutcontainer {
+  width: 100%;
+  height: 500px;
+  background: #f3f4f6;
+  border-radius: 5px;
+  margin-left: 17px;
+  margin-right: 16px;
 }
 
-.orderPrice{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #828282;
+.orderContainer {
+  width: 100%;
+  /* height: 100%; */
+  background: #f3f4f6;
+  margin-left: 40px;
+}
+.ordertitle {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 70px;
+  color: #828282;
+  text-align: center;
+  color: #828282;
+}
+.orderParentofSpanS {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+.orderNum {
+  margin-right: 3px;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #828282;
+}
+.orderHeight {
+  height: 250px;
+  overflow-y: scroll;
+}
+.orderParent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+}
+.orderContent1 {
+  margin-right: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 
-
+  color: #828282;
 }
 
-.spanBorder{
-    border: 1px solid #E0E0E0;
-   display: block;
-   margin-top: 27px;
-   margin-bottom: 31px;
-   width: 300px;
-
+.orderPrice {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
 }
 
-
-.total{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-color: #828282;
-letter-spacing: 0.03em;
+.spanBorder {
+  border: 1px solid #e0e0e0;
+  display: block;
+  margin-top: 27px;
+  margin-bottom: 31px;
+  width: 300px;
 }
-.price{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #828282;
+
+.total {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #828282;
+  letter-spacing: 0.03em;
+}
+.price {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
 }
 
 /* checkout part I mean radio Inputs and labels */
- .checkoutInfo{
-    margin-left: 39px;
- }
-.orderRadio{
-    display: flex;
-    justify-content: center;
-  
-  
-} 
-.checkoutForm{
-    margin-left: 39px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+.checkoutInfo {
+  margin-left: 39px;
+}
+.orderRadio {
+  display: flex;
+  justify-content: center;
+}
+.checkoutForm {
+  margin-left: 39px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.checkoutTrue{
-    width: 100%;
-    background: #F3F4F6;
-    margin-left: 17px;
-   
+.checkoutTrue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  margin-left: 17px;
+  height: 500px;
+}
+.checkContainer {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 74px; */
 
 }
-.checkContainer{
-    display: flex;
-    justify-content: center;
-   padding-top: 74px;
+.checkparagraphDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
-.checkparagraphDiv{
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-.paragraph{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 35px;
-color: #4F4F4F;
-text-align: center;
+.paragraph {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #4f4f4f;
+  text-align: center;
 }
 
 /* mobile design's codes which I've used them in checkoutContainer */
-@media screen and (min-width: 320px) and (max-width: 576px){
-    .checkoutMobile{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .checkoutMobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .orderContainer {
+    margin-left: 0;
+  }
+  .checkoutcontainer {
+    margin-left: 0;
+    margin-right: 0;
+    height:auto;
+  }
+  .orderRadio {
+   flex-direction: column;
+  }
+  .checkoutForm {
+    margin-left: 9px;
+    justify-content: flex-start;
+  }
+  .checkoutInfo {
+    margin-left: 10px;
+  }
+  .checkoutTrue {
+
+    margin-left: 0;
+
+  }
 }

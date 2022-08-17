@@ -18,16 +18,16 @@ import { useSelector } from "react-redux";
 
 function RestaurantPaymentContainer() {
   const [data, setData] = useState({});
+  const [width, setWidth] = useState(0)
   const route = useRouter();
   const state = useSelector((state) => state.RestaurantSlice.restaurants);
 
-  useEffect( () => {
-   
-      let arr =  state.filter((item) => item.name === route.query.name);
-      setData(arr[0]);
-  
+  useEffect(() => {
+    setWidth(window.innerWidth)
+    let arr = state.filter((item) => item.name === route.query.name);
+    setData(arr[0]);
   }, [route.query.name]);
-  
+
   return (
     <RestaurantPayment className="container">
       <RestaurantImage>
@@ -44,15 +44,18 @@ function RestaurantPaymentContainer() {
         </RestaurantInformationRight>
         <DeliveryDiv>
           <p>{data?.delivery}$</p>
-          <p>Delivery</p>
+
+          <p>Delivery</p> 
         </DeliveryDiv>
-        <GoBackBtn>Go Back</GoBackBtn>
+        {width > 576 && (
+          <GoBackBtn>Go Back</GoBackBtn>
+        )}
       </RestaurantInformation>
       <RestaurantProductsContainer>
         <RestaurantProducts>
           <h3>Products</h3>
-          
-          <ProductItem  value={data}/>
+
+          <ProductItem value={data} />
         </RestaurantProducts>
         <RestaurantProductsCounter>
           <RestaurantProductsBasket />

@@ -14,20 +14,20 @@ function CheckoutContainer(props) {
   return (
     <>
       <div className="container d-flex checkoutMobile">
-        <div className="col-3">
+        <div className="col-lg-3 col-sm-12">
           <ProfileSidebar />
         </div>
         {!show ? (
           <>
-            <div className="col-5">
+            <div className="col-lg-5 col-sm-12">
               <Checkout changeShow={changeShow} />
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-sm-12">
               <Order />
             </div>
           </>
         ) : (
-          <div className="col-9">
+          <div className="col-lg-9 col-sm-12">
             <Checked />
           </div>
         )}

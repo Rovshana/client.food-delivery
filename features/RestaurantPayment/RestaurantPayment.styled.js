@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const RestaurantPayment = styled.div`
-margin-bottom: 50px;
+  margin-bottom: 50px;
   & p {
     /* margin-bottom: 5px !important; */
   }
@@ -15,6 +15,10 @@ export const RestaurantImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    height: 168px;
+  }
 `;
 
 export const RestaurantInformation = styled.div`
@@ -22,7 +26,12 @@ export const RestaurantInformation = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 export const RestaurantInformationLeft = styled.div`
   & p:first-child {
@@ -50,6 +59,11 @@ export const RestaurantInformationRight = styled.div`
     font-size: 18px;
     color: #828282;
   }
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    & p {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const DeliveryDiv = styled.div`
@@ -72,13 +86,17 @@ export const GoBackBtn = styled.button`
 
 export const RestaurantProductsContainer = styled.div`
   display: flex;
-  height: 600px;
+  /* height: 600px; */
+  @media only screen and (min-width: 320px) and (max-width: 576px){
+  flex-direction: column;
+
+  } 
 `;
 
 export const RestaurantProducts = styled.div`
   width: 60%;
-  /* height: 600px; */
-  overflow-y:auto;
+  height: 600px;
+  overflow-y: auto;
   margin-right: 50px;
   background: #f3f4f6;
   border-radius: 4px;
@@ -91,6 +109,10 @@ export const RestaurantProducts = styled.div`
     color: #4f4f4f;
     padding: 40px;
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 export const ProductItemStyle = styled.div`
@@ -98,7 +120,7 @@ export const ProductItemStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
 
   & div {
     & p:first-child {
@@ -130,7 +152,7 @@ export const ProductItemStyle = styled.div`
   }
 
   & button {
-    background:#f3f4f6;
+    background: #f3f4f6;
     border: 2px solid #bdbdbd;
     border-radius: 100px;
     display: flex;
@@ -142,125 +164,140 @@ export const ProductItemStyle = styled.div`
       border: 2px solid #6fcf97;
     }
   }
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    padding: 5px;
+    & div {
+    & p:first-child {
+      margin-bottom: 0;
+      margin-left: 8px;
+    }
+    & p:last-child {
+      margin-left: 8px;
+    }
+  }
+  }
 `;
 
 export const RestaurantProductsCounter = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 40%;
-overflow-y:auto;
-padding: 10px 15px;
-background: #F3F4F6;
-box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  overflow-y: auto;
+  padding: 10px 15px;
+  background: #f3f4f6;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
-& button{
-  background: #BDBDBD;
-border-radius: 100px;
-padding: 2px 2px 2px 25px;
-border: none;
-display: flex;
-justify-content: space-between;
-align-items: center;
-color: #FFFFFF;
-font-size: 16px;
-margin-bottom: 23px;
-  & span{
-    width: 187px;
-    padding: 15px;
-    background: #FFFFFF;
-border-radius: 100px;
-color: #BDBDBD;
+  & button {
+    background: #bdbdbd;
+    border-radius: 100px;
+    padding: 2px 2px 2px 25px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 23px;
+    & span {
+      width: 187px;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 100px;
+      color: #bdbdbd;
+    }
   }
-}
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #888;
-  ;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #888;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(214, 54, 38)
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(214, 54, 38);
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(214, 54, 38);
-}
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(214, 54, 38);
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    & button{
+      & span{
+        padding: 5px;
+      }
+    }
+  }
 `;
 
-
-
 export const BasketDiv = styled.div`
+  margin: 0 auto;
 
-margin: 0 auto;
-
-& p{
-  font-family: 'Roboto',sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-text-align: center;
-width: 295px;
-margin-bottom: 0;
-color: #BDBDBD;
-
-}
-`
+  & p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    width: 295px;
+    margin-bottom: 0;
+    color: #bdbdbd;
+  }
+`;
 
 export const ItemsDiv = styled.div`
-display: flex;
-/* justify-content: center; */
-align-items: center;
-padding:15px;
-border-bottom: 1px solid #E0E0E0 ;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
 
-& img{
-  margin-right: 10px;
-}
-`
-
+  & img {
+    margin-right: 10px;
+  }
+`;
 
 export const SelectBasketProduct = styled.div`
-display: flex;
-/* justify-content:space-between; */
-align-items: center;
-padding: 15px;
-& img{
-  margin-right: 35px;
-  width: 50px;
-}
-& p{
-  margin-bottom: 0;
-}
-& button{
-  padding: 0;
-  color: #000;
-  background: transparent;
-  margin-bottom: 0;
-  &:disabled{
-    opacity: 0.2;
-
+  display: flex;
+  /* justify-content:space-between; */
+  align-items: center;
+  padding: 15px;
+  & img {
+    margin-right: 35px;
+    width: 50px;
   }
-  
-}
-`
+  & p {
+    margin-bottom: 0;
+  }
+  & button {
+    padding: 0;
+    color: #000;
+    background: transparent;
+    margin-bottom: 0;
+    &:disabled {
+      opacity: 0.2;
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+ 
+  }
+`;
 
 export const SelectBasketProductName = styled.div`
-width: 200px;
-margin-right: 35px;
-
-`
+  width: 200px;
+  margin-right: 35px;
+`;
 export const SelectBasketProductCounter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 35px;
-`
+`;
