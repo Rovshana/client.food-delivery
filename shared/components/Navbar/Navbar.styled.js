@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   /* border: 1px solid orange; */
   /* margin-top: 50px; */
   @media only screen and (min-width: 320px) and (max-width: 576px) {
-    height: auto;
+    height: 80px;
   }
 `;
 export const Ul = styled.ul`

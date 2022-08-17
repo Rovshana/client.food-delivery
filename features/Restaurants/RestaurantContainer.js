@@ -44,7 +44,7 @@ function RestaurantsContainer() {
         <RestaurantCards categoryRes={categoryRes} />
         <CirclePagination />
       </div>
-      {filtershow && <Filters />}
+      {filtershow && <Filters setFilterShow={setFilterShow} />}
     </div>
   );
 }

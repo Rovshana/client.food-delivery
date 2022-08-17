@@ -19,13 +19,6 @@
   border-radius: 50%;
 }
 
-/* .MuiButtonBase-root:hover{
-    background: #D63626 !important; 
-    color: #fff !important;
-  border-radius: 50%;
-
-} */
-
 
 .MuiPagination-ul {
     justify-content: center;
@@ -52,4 +45,23 @@
     color: #D63626;
     font-weight: 800;
 font-size: 18px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .MuiButtonBase-root{
+        background: none !important; 
+        
+        color: #D63626;
+        padding: 0;
+        margin: 8px 12px;
+        
+    }
+    .MuiButtonBase-root {
+        width:34px;
+        height: 34px;
+        color: #D63626;
+        font-weight: 800;
+    font-size: 14px;
+    }
+    
 }
