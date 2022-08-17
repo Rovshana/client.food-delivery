@@ -1,6 +1,6 @@
 import React from 'react'
 import { useFormik } from 'formik';
-import { Input, Form, Label, Button} from '../Profile/Profile.styled'
+import { Input, Form, Label, Button, TitleProfile} from '../Profile/Profile.styled'
  function UserProfile(props) {
   const formik = useFormik({
     initialValues: {
@@ -43,8 +43,9 @@ import { Input, Form, Label, Button} from '../Profile/Profile.styled'
   
   return (
     < div className=' container Profilebox'>
-    <Form onSubmit={formik.handleSubmit}>
+  <Form onSubmit={formik.handleSubmit}>
      <div className='myProfileForm'>
+      <TitleProfile>Profile</TitleProfile>
      <Label htmlFor="fullName">Full Name</Label>
       <Input
         id="fullName"
@@ -100,7 +101,7 @@ import { Input, Form, Label, Button} from '../Profile/Profile.styled'
         value={formik.values.address}
       />
       </div>
-      <Button type="submit">Submit</Button>
+      <Button type="submit">Save</Button>
     </Form>
   
 

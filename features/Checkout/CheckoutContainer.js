@@ -13,7 +13,7 @@ function CheckoutContainer(props) {
 
   return (
     <>
-      <div className="container d-flex">
+      <div className="container d-flex checkoutMobile">
         <div className="col-3">
           <ProfileSidebar />
         </div>
