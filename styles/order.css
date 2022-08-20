@@ -1,0 +1,33 @@
+.orderContainer{
+    background: #F3F4F6;
+border-radius: 5px;
+height: 500px;
+margin-bottom: 50px;
+
+}
+.orderTable{
+    padding-top: 20px;
+}
+.ordersTitle{
+    font-family: 'Mukta';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+padding-top: 30px;
+color: #4F4F4F;
+}
+.ordersTablecell{
+    font-family: 'Open Sans' sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+color: #00072B;
+}
+
+.ordersInfo{
+    font-family: 'Open Sans' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+}
