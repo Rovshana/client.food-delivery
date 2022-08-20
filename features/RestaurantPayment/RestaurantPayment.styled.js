@@ -174,6 +174,26 @@ border-radius: 100px;
 color: #BDBDBD;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 54, 38)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(214, 54, 38);
+}
 `;
 
 

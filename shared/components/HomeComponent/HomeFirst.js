@@ -45,21 +45,21 @@ function HomeFirst(props) {
           </ImageKeeper>
          
           <motion.div 
-          animate={{scale: 1.2}} 
+          animate={{scale: [1 , 1.2 , 1]}} 
           transition={{
-            duration:2,
+            duration:3,
             repeat:Infinity,
           }}
-          className="pizza">
+          className="pizzaHome">
             <img src="/pizza.svg" alt="pizza" />
             <p>Pizza Hut Yummy ...</p>
           </motion.div>
        {width > 576 && (
         <>
            <motion.div
-            animate={{scale: 1.2}} 
+            animate={{scale: [1 , 1.2 , 1]}} 
             transition={{
-              duration:2,
+              duration:3,
               repeat:Infinity,
             }}
           className="french">
@@ -67,9 +67,9 @@ function HomeFirst(props) {
             <p>French Fries Yummy ...</p>
           </motion.div>
           <motion.div 
-            animate={{scale: 1.2}} 
+         animate={{scale: [1 , 1.2 , 1]}} 
             transition={{
-              duration:2,
+              duration:3,
               repeat:Infinity,
             }}
           className="cheeseBurg">
