@@ -47,7 +47,10 @@ function Navbar(props) {
   };
   // router
   const route = useRouter();
+
+ 
   const state = useSelector((state) => state.BasketSlices.myBasket);
+
 
   return (
     <>
@@ -134,10 +137,12 @@ function Navbar(props) {
           </Dropdown>
           {myLocal && (
             <BasketDiv>
+
               <span>{state.length}</span>
               <img src="/login/sebet.svg" />
             </BasketDiv>
           )}
+
 
           {!myLocal && width > 576 ? (
             <Button2>Sign up</Button2>

@@ -11,16 +11,24 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
 import {
+
+  setBasket,
   setBasketDelete,
   setBasketUpdate,
-  setResult,
 } from "../../store/slices/BasketSlices";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 function RestaurantProductsBasket() {
+  const [show, setShow] = useState(0);
+
   const state = useSelector((state) => state.BasketSlices.myBasket);
   const result = useSelector((state) => state.BasketSlices.result);
   
   const dispatch = useDispatch();
+
+
+ 
+  const deleteProduct = (id) => {
+    let arr = state.filter((item) => item.id !== id);
 
   useEffect(() => {
     let arr = [];
@@ -42,6 +50,7 @@ function RestaurantProductsBasket() {
 
   const deleteProduct = (name) => {
     let arr = state.filter((item) => item.name !== name);
+
     dispatch(setBasketDelete(arr));
   };
 
@@ -70,17 +79,15 @@ function RestaurantProductsBasket() {
               <p>$ {(item.price * item.count).toPrecision(3)}</p>
             </SelectBasketProductName>
             <SelectBasketProductCounter>
-              <button
-                disabled={item.count === item.stock && true}
-                onClick={() => increment(item.id)}
-              >
+
+              <button disabled={item.count === item.stock && true} onClick={() => increment(item.id)}>
                 <AddIcon />
               </button>
               <p>{item.count}</p>
-              <button
-                disabled={item.count === 1 && true}
-                onClick={() => decrement(item.id)}
-              >
+              <button disabled={item.count === 1 && true} onClick={() => decrement(item.id)}>
+
+              
+
                 <RemoveIcon />
               </button>
             </SelectBasketProductCounter>

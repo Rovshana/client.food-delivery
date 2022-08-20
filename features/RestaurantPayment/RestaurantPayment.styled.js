@@ -249,7 +249,6 @@ padding: 15px;
     opacity: 0.2;
 
   }
-  
 }
 `
 

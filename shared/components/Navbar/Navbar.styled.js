@@ -99,6 +99,21 @@ export const BasketDiv = styled.div`
   }
 `;
 
+export const BasketDiv = styled.div`
+  position: relative;
+  
+  & span{
+    background: red;
+    width: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+`
+
 export const Button2 = styled.button`
   width: 115px;
   height: 41px;

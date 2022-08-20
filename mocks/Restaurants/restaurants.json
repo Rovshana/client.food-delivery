@@ -14,9 +14,17 @@
         "name": "Burger",
         "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
+
+
+        "count": 1, 
+        "stock": 8
+        "image": "burger.svg "
+
+
         "count": 1,
         "stock": 8,
         "image": "burger.jpg"
+
       },
       {
         "id": 2,
@@ -24,7 +32,10 @@
         "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 1,
+       
+
         "image": "free.webp",
+
         "stock": 8
       }
     ]
@@ -46,6 +57,7 @@
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 1,
         "image": "pizza.webp",
+
         "stock": 8
       },
       {
@@ -184,7 +196,8 @@
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 1,
         "image": "yengec.jpg",
-        "stock": 8
+
+     "stock": 8
       }
     ]
   }
