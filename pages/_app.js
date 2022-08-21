@@ -18,6 +18,7 @@ import "../styles/langbar.css";
 import "../styles/pagination.css";
 import "../styles/profile.css";
 import "../styles/checkout.css";
+import "../styles/order.css";
 import "../styles/homefirst.scss";
 import "../styles/about.css";
 import 'react-toastify/dist/ReactToastify.css';

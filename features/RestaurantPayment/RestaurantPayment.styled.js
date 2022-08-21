@@ -277,6 +277,7 @@ export const SelectBasketProduct = styled.div`
   & p {
     margin-bottom: 0;
   }
+
   & button {
     padding: 0;
     color: #000;
