@@ -14,17 +14,9 @@
         "name": "Burger",
         "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
-
-
-        "count": 1, 
-        "stock": 8
-        "image": "burger.svg "
-
-
         "count": 1,
         "stock": 8,
         "image": "burger.jpg"
-
       },
       {
         "id": 2,
@@ -32,7 +24,6 @@
         "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
         "count": 1,
-       
 
         "image": "free.webp",
 
@@ -77,7 +68,7 @@
     "cuisine": ["fast food", "cheese", "burger"],
     "delivery": 10,
     "time": 22,
-    "categories": ["Fast Food", "Pizza","Burger"],
+    "categories": ["Fast Food", "Pizza", "Burger"],
     "image": "mcdonalds.webp",
     "street": "19 Nizami street, Sabail, Baku",
     "products": [
@@ -104,7 +95,7 @@
   {
     "id": 4,
     "name": "Adana Kebab House",
-    "cuisine": ["kebab","ayran","ciyer"],
+    "cuisine": ["kebab", "ayran", "ciyer"],
     "delivery": 10,
     "time": 22,
     "categories": ["Kebab"],
@@ -134,7 +125,7 @@
   {
     "id": 5,
     "name": "Lanterns",
-    "cuisine": ["indian","indian","indian"],
+    "cuisine": ["indian", "indian", "indian"],
     "delivery": 10,
     "time": 22,
     "categories": ["Indian"],
@@ -164,7 +155,7 @@
   {
     "id": 6,
     "name": "Miso Honi",
-    "cuisine": ["Chinese","Chinese","Chinese"],
+    "cuisine": ["Chinese", "Chinese", "Chinese"],
     "delivery": 10,
     "time": 22,
     "categories": ["Chinese"],
@@ -197,7 +188,7 @@
         "count": 1,
         "image": "yengec.jpg",
 
-     "stock": 8
+        "stock": 8
       }
     ]
   }

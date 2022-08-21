@@ -29,39 +29,15 @@ export const BasketSlices = createSlice({
         }
       });
     },
-  },
-});
-
-// Action creators are generated for each case reducer function
-export const { setBasketUpdate, setBasket, setBasketDelete } =
-
-    },
-    setBasketDelete: (state, action) => {
-      state.myBasket = action.payload;
-    },
-    setBasketUpdate: (state, action) => {
-      
-      state.myBasket.map((item) => {
-        if (action.payload.inc && item.id === action.payload.id) {
-          item.count++;
-        }
-        else if(action.payload.desc && item.id === action.payload.id)
-        {
-          item.count--
-        }
-      });
-    },
     setResult:(state, action)=>{
    
       state.result = action.payload
     }
   },
-
 });
 
-// Action creators are generated for each case reducer function
-export const {setResult, setBasketUpdate, setBasket, setBasketDelete } =
 
-  BasketSlices.actions;
+// Action creators are generated for each case reducer function
+export const {setResult, setBasketUpdate, setBasket, setBasketDelete } = BasketSlices.actions;
 
 export default BasketSlices.reducer;
