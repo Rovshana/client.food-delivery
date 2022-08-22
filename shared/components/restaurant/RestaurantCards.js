@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 function RestaurantCards({ categoryRes }) {
   const route = useRouter();
-  console.log(categoryRes);
   return (
     <div className="box row">
       {categoryRes.length > 0

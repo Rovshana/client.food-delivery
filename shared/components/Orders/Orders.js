@@ -1,6 +1,7 @@
 import React from 'react'
 import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody} from '@mui/material'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 import MyModal from './Modal';
 import {useState} from 'react'
 import Button from 'react-bootstrap/Button'
@@ -12,6 +13,7 @@ import {useSelector, dispatch} from "react-redux"
 const [showDeleteButton,setShowDeleteButton] = useState(false)
 const state = useSelector(state=>state.CheckoutSlice.personInfo)
 console.log(state)
+
     return (
         < div className=' container orderContainer'>
             <h2 className='ordersTitle'>Your Orders</h2>
