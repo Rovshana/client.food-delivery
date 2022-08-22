@@ -23,10 +23,11 @@ function RestaurantPaymentContainer() {
   const state = useSelector((state) => state.RestaurantSlice.restaurants);
 
   useEffect(() => {
+    console.log(state);
     setWidth(window.innerWidth)
     let arr = state.filter((item) => item.name === route.query.name);
     setData(arr[0]);
-  }, [route.query.name]);
+  }, [state,route.query.name]);
 
   return (
     <RestaurantPayment className="container">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setBasket } from "../../store/slices/BasketSlices";
+import { basketPostApi } from "../../api/basket";
 function ProductItem({ value }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.BasketSlices.myBasket);
@@ -11,14 +12,18 @@ function ProductItem({ value }) {
     state.map((item) => {
       arr.push(item.name);
     });
-    
+
     if (!arr.includes(item.name)) {
-      dispatch(setBasket(item));
+      basketPostApi(item).then((res) => {
+        if (res.status === 201) {
+          dispatch(setBasket(item));
+        }
+      });
     }
   };
   return (
     <>
-      {value.products?.map((item) => (
+      {value?.products?.map((item) => (
         <ProductItemStyle key={item.name}>
           <Image
             src={`/restaurant/products/${item.image}`}

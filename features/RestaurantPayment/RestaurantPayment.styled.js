@@ -179,10 +179,12 @@ export const ProductItemStyle = styled.div`
 `;
 
 export const RestaurantProductsCounter = styled.div`
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
+  width: ${props=>props.myBasket ? "99%" : "40%"};
+  margin-left: ${props=>props.myBasket ? "15px" : "0"} ;
   overflow-y: auto;
   padding: 10px 15px;
   background: #f3f4f6;
@@ -255,11 +257,9 @@ export const BasketDiv = styled.div`
 
 export const ItemsDiv = styled.div`
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
-
   & img {
     margin-right: 10px;
   }
@@ -267,12 +267,13 @@ export const ItemsDiv = styled.div`
 
 export const SelectBasketProduct = styled.div`
   display: flex;
-  /* justify-content:space-between; */
+  justify-content: ${props=>props.myBasket ? "space-between":""};
   align-items: center;
   padding: 15px;
   & img {
     margin-right: 35px;
-    width: 50px;
+    width: ${props=>props.myBasket ? "68px":"50px"};
+    border-radius: ${props=>props.myBasket ? "50px":""};
   }
   & p {
     margin-bottom: 0;
@@ -295,6 +296,9 @@ export const SelectBasketProduct = styled.div`
 export const SelectBasketProductName = styled.div`
   width: 200px;
   margin-right: 35px;
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+  }
 `;
 export const SelectBasketProductCounter = styled.div`
   display: flex;
