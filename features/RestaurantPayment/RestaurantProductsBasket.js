@@ -15,6 +15,7 @@ import {
   setBasket,
   setBasketDelete,
   setBasketUpdate,
+  setResult,
 } from "../../store/slices/BasketSlices";
 
 import { useRouter } from "next/router";
@@ -54,11 +55,7 @@ function RestaurantProductsBasket() {
 
   // console.log(show);
 
-  const deleteProduct = (name) => {
-    let arr = state.filter((item) => item.name !== name);
 
-    dispatch(setBasketDelete(arr));
-  };
 
   const increment = (id) => {
     let inc = true;
