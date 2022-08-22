@@ -153,11 +153,11 @@ function Navbar(props) {
             </ProfileNav>
           {profile && (
               <ProfileMenu>
-              <p>Profile</p>
-              <p>Your Basket</p>
-              <p>Your Orders</p>
-              <p>Checkout</p>
-              <p>Logout</p>
+              <p onClick={()=>route.push("/profile")}>Profile</p>
+              <p onClick={()=>route.push("/basket")}> Your Basket</p>
+              <p onClick={()=>route.push('/orders')}>Your Orders</p>
+              <p  onClick={()=>route.push('/checkout')}>Checkout</p>
+              <p onClick={()=>route.push("/logout")}>Logout</p>
             </ProfileMenu>
           )}
             </>

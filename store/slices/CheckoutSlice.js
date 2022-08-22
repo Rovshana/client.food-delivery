@@ -2,9 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
  
-    personInfo:{},
-    products:[]
-  
+    personInfo:{}, 
+    products:[] 
+  // gorursenmi burda iki dene data var, burdaki birinci olan ordersda cixandi ikinci olan showda cixandi lakin 
+  // time falan vermemisik bura onu elave edecem time hissesi bosh qala biler heleki amount ise count-la price vurassan
+  // alina neticedi ,sen 
 }
 
 export const CheckoutSlice = createSlice({
