@@ -6,6 +6,7 @@ function Restaurant() {
   const route = useRouter();
 
   const state = useSelector((state) => state.RestaurantSlice.categories);
+  
   return (
     <div className="sidebar">
       <div className="parent2" onClick={() => route.push("/restaurants")}>
