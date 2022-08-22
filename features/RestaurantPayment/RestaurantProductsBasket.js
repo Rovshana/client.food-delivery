@@ -15,22 +15,32 @@ import {
   setBasket,
   setBasketDelete,
   setBasketUpdate,
+  setResult,
 } from "../../store/slices/BasketSlices";
+
+import { useRouter } from "next/router";
+
 import { useEffect, useState } from "react";
+
 function RestaurantProductsBasket() {
   const [show, setShow] = useState(0);
 
   const state = useSelector((state) => state.BasketSlices.myBasket);
   const result = useSelector((state) => state.BasketSlices.result);
-  
+  const [width, setWidth] = useState(0);
   const dispatch = useDispatch();
 
+  const route = useRouter()
+  const [showBasket, setShowBasket] = useState(false);
 
  
   const deleteProduct = (id) => {
-    let arr = state.filter((item) => item.id !== id);
+  let arr = state.filter((item) => item.id !== id);
+  }
+
 
   useEffect(() => {
+    setWidth(window.innerWidth);
     let arr = [];
     let result = 0;
     state.map((item) => {
@@ -41,18 +51,11 @@ function RestaurantProductsBasket() {
     }
 
     dispatch(setResult(result.toPrecision(3)));
-
-
-    
   }, [state]);
 
   // console.log(show);
 
-  const deleteProduct = (name) => {
-    let arr = state.filter((item) => item.name !== name);
 
-    dispatch(setBasketDelete(arr));
-  };
 
   const increment = (id) => {
     let inc = true;
@@ -66,48 +69,56 @@ function RestaurantProductsBasket() {
 
   return (
     <>
-      <ItemsDiv>
-        <img src="/restaurant/smallBasket.svg" />
-        <span>{state.length !== 0 ? state.length : 0} items</span>
-      </ItemsDiv>
-      {state.length !== 0 ? (
-        state.map((item) => (
-          <SelectBasketProduct key={item.name}>
-            <img src={`/restaurant/products/${item.image}`} alt="" />
-            <SelectBasketProductName>
-              <p>{item.name}</p>
-              <p>$ {(item.price * item.count).toPrecision(3)}</p>
-            </SelectBasketProductName>
-            <SelectBasketProductCounter>
 
-              <button disabled={item.count === item.stock && true} onClick={() => increment(item.id)}>
-                <AddIcon />
-              </button>
-              <p>{item.count}</p>
-              <button disabled={item.count === 1 && true} onClick={() => decrement(item.id)}>
+    {(width > 576 || showBasket) &&(
+      <>
+       <ItemsDiv>
+ <img src="/restaurant/smallBasket.svg" />
+ <span>{state.length !== 0 ? state.length : 0} items</span>
+</ItemsDiv>
+{state.length !== 0 ? (
+ state.map((item) => (
+   <SelectBasketProduct key={item.name}>
+     <img src={`/restaurant/${item.image}`} alt="" />
+     <SelectBasketProductName>
+       <p>{item.name}</p>
+       <p>$ {(item.price * item.count).toPrecision(3)}</p>
+     </SelectBasketProductName>
+     <SelectBasketProductCounter>
+       <button
+         disabled={item.count === item.stock && true}
+         onClick={() => increment(item.id)}
+       >
+         <AddIcon />
+       </button>
+       <p>{item.count}</p>
+       <button
+         disabled={item.count === 1 && true}
+         onClick={() => decrement(item.id)}
+       >
+         <RemoveIcon />
+       </button>
+     </SelectBasketProductCounter>
+     <DeleteSweepIcon
+       onClick={() => deleteProduct(item.name)}
+       style={{ alignSelf: "flex-start" }}
+     />
+   </SelectBasketProduct>
+ ))
+) : (
+ <BasketDiv>
+   <Image src="/restaurant/basket.svg" width="300" height="300" />
+   <p>Opps!</p>
+   <p>Basket empty</p>
+ </BasketDiv>
+)}
+      </>
+    )}
+     
 
-              
-
-                <RemoveIcon />
-              </button>
-            </SelectBasketProductCounter>
-            <DeleteSweepIcon
-              onClick={() => deleteProduct(item.name)}
-              style={{ alignSelf: "flex-start" }}
-            />
-          </SelectBasketProduct>
-        ))
-      ) : (
-        <BasketDiv>
-          <Image src="/restaurant/basket.svg" width="300" height="300" />
-          <p>Opps!</p>
-          <p>Basket empty</p>
-        </BasketDiv>
-      )}
-
-      <button style={{ background: state.length > 0 && "red" }}>
-        Checkout
-        <span style={{ color: state.length > 0 && "red" }}>${result}</span>
+      <button style={{ background: state.length > 0 && "red" }} onClick={()=>setShowBasket(!showBasket)}>
+         {(width > 576 || showBasket) ? "Checkout" : `${state.length} Items`}
+        <span style={{ color: state.length > 0 && "red" }} onClick={() => route.push("/checkout")}>${result}</span>
       </button>
     </>
   );

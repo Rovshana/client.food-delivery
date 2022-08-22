@@ -29,14 +29,17 @@ export const BasketSlices = createSlice({
         }
       });
     },
+
+    setResult:(state, action)=>{
+   
+      state.result = action.payload
+    }
   },
 });
 
 
 
 // Action creators are generated for each case reducer function
-export const {setResult, setBasketUpdate, setBasket, setBasketDelete } =
-
-  BasketSlices.actions;
+export const {setResult, setBasketUpdate, setBasket, setBasketDelete } = BasketSlices.actions;
 
 export default BasketSlices.reducer;
