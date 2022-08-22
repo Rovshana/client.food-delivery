@@ -27,13 +27,13 @@ function Checkout(props) {
       cash: "",
     },
     onSubmit: (values) => {
-      // checkoutApi(values).then((res) => {
-      //   if (res.status === 201) {
-      //     let arr = [state.myBasket, values];
-      //     dispatch(setCheckout(arr));
+      checkoutApi(values).then((res) => {
+        if (res.status === 201) {
+          let arr = [state.myBasket, values];
+          dispatch(setCheckout(arr));
           props.changeShow()
-      //   }
-      // });
+        }
+      });
      
     },
   });

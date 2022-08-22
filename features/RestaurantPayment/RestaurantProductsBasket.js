@@ -11,8 +11,6 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
 import {
-
-  setBasket,
   setBasketDelete,
   setBasketUpdate,
   setResult,
@@ -34,8 +32,10 @@ function RestaurantProductsBasket() {
   const [showBasket, setShowBasket] = useState(false);
 
  
-  const deleteProduct = (id) => {
-  let arr = state.filter((item) => item.id !== id);
+  const deleteProduct = (name) => {
+    
+  let arr = state.filter((item) => item.name !== name);
+  dispatch(setBasketDelete(arr))
   }
 
 
@@ -78,7 +78,7 @@ function RestaurantProductsBasket() {
 </ItemsDiv>
 {state.length !== 0 ? (
  state.map((item) => (
-   <SelectBasketProduct key={item.name}>
+   <SelectBasketProduct myBasket key={item.name}>
      <img src={`/restaurant/${item.image}`} alt="" />
      <SelectBasketProductName>
        <p>{item.name}</p>

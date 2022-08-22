@@ -6,7 +6,6 @@ import RestaurantsContainer from "../../features/Restaurants/RestaurantContainer
 import { setCategory, setRestaurant } from "../../store/slices/RestaurantSlice";
 
 function Restaurants({restaurant,category}) {
-    // console.log(restaurant);
     const dispath = useDispatch()
     useEffect(()=>{
         dispath(setRestaurant(restaurant))

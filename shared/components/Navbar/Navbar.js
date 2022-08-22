@@ -154,7 +154,7 @@ function Navbar(props) {
           {profile && (
               <ProfileMenu>
               <p>Profile</p>
-              <p>Your Basket</p>
+              <p onClick={() =>route.push("/basket")}>Your Basket</p>
               <p>Your Orders</p>
               <p>Checkout</p>
               <p>Logout</p>

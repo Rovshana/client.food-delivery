@@ -13,7 +13,6 @@ import FooterTop from "./FooterTop";
 import { useRouter } from "next/router";
 function Footer(props) {
   const route = useRouter();
-  console.log(route);
   return (
     <>
       {route.pathname === "/" && <FooterTop />}
