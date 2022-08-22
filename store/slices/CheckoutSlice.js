@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
  
-    personInfo:{},
+    personInfo:[],
     products:[]
   
 }
@@ -13,7 +13,7 @@ export const CheckoutSlice = createSlice({
   reducers: {
     setCheckout : (state,action)=>{
         state.products = action.payload[0]
-        state.personInfo = action.payload[1]
+        state.personInfo.push(action.payload[1])
     },
   },
 })

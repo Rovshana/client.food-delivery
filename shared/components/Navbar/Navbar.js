@@ -155,7 +155,7 @@ function Navbar(props) {
               <ProfileMenu>
               <p>Profile</p>
               <p onClick={() =>route.push("/basket")}>Your Basket</p>
-              <p>Your Orders</p>
+              <p  onClick={() =>route.push("/orders")}>Your Orders</p>
               <p>Checkout</p>
               <p>Logout</p>
             </ProfileMenu>

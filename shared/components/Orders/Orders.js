@@ -1,10 +1,13 @@
 import React from 'react'
 import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody} from '@mui/material'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { useSelector } from 'react-redux';
 
 
  function Orders(props) {
+    const state = useSelector((state) => state.CheckoutSlice)
 
+    console.log(state);
     return (
         < div className=' container orderContainer'>
             <h2 className='ordersTitle'>Your Orders</h2>
