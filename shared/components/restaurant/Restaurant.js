@@ -10,14 +10,13 @@ function Restaurant() {
   return (
     <div className="sidebar">
       <div className="parent2" onClick={() => route.push("/restaurants")}>
-        <Image width="25" height="28" src="" />
         <p className="type">All</p>
       </div>
-      {state?.map((category) => (
+      {state?.map((category,index) => (
         <>
           <div
             onClick={() => route.push(`?category=${category.name}`)}
-            key={category.id}
+            key={index}
             className="parent2"
           >
             <Image

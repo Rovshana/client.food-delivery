@@ -19,12 +19,11 @@ function RestaurantsContainer() {
         item.categories.includes(route.query.category)
       );
       setCategoryRes(arr);
-    } else {
+    } else  {
       setCategoryRes(state);
     }
-  }, [route.query.category]);
+  }, [state,route.query.category]);
 
-  console.log(categoryRes);
 
   return (
     <div className="container row mx-auto" style={{ padding: 0 }}>
