@@ -1,7 +1,9 @@
 import React from 'react'
 import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody} from '@mui/material'
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
+
  function Orders(props) {
-    
 
     return (
         < div className=' container orderContainer'>
@@ -29,7 +31,7 @@ import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody}
                         <TableCell  className='ordersInfo'>$288.80</TableCell>
                         <TableCell  className='ordersInfo'>Cash on Delivery</TableCell>
                         <TableCell  className='ordersInfo'>050-323-99-89</TableCell>
-                        <TableCell>del</TableCell>
+                        <TableCell ><MoreVertIcon/></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell className='ordersInfo'>1</TableCell>
@@ -38,7 +40,7 @@ import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody}
                         <TableCell  className='ordersInfo'>$288.80</TableCell>
                         <TableCell  className='ordersInfo'>Cash on Delivery</TableCell>
                         <TableCell  className='ordersInfo'>050-323-99-89</TableCell>
-                        <TableCell>del</TableCell>
+                        <TableCell><MoreVertIcon/></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell className='ordersInfo'>1</TableCell>
@@ -47,7 +49,7 @@ import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody}
                         <TableCell  className='ordersInfo'>$288.80</TableCell>
                         <TableCell  className='ordersInfo'>Cash on Delivery</TableCell>
                         <TableCell  className='ordersInfo'>050-323-99-89</TableCell>
-                        <TableCell>del</TableCell>
+                        <TableCell><MoreVertIcon/></TableCell>
                     </TableRow>
                     <TableRow>
                         <TableCell className='ordersInfo'>1</TableCell>
@@ -56,7 +58,7 @@ import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody}
                         <TableCell  className='ordersInfo'>$288.80</TableCell>
                         <TableCell  className='ordersInfo'>Cash on Delivery</TableCell>
                         <TableCell  className='ordersInfo'>050-323-99-89</TableCell>
-                        <TableCell>del</TableCell>
+                        <TableCell><MoreVertIcon/></TableCell>
                     </TableRow>
                    
                 </TableBody>

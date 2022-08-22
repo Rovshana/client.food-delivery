@@ -97,22 +97,22 @@ export const BasketDiv = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     display: none;
   }
-`;
-
-export const BasketDiv = styled.div`
-  position: relative;
-  
-  & span{
-    background: red;
-    width: 25px;
-    text-align: center;
-    color: white;
-    border-radius: 100px;
-    position: absolute;
-    top: -10px;
-    right: 0;
-  }
 `
+
+// export const BasketDiv = styled.div`
+//   position: relative;
+  
+//   & span{
+//     background: red;
+//     width: 25px;
+//     text-align: center;
+//     color: white;
+//     border-radius: 100px;
+//     position: absolute;
+//     top: -10px;
+//     right: 0;
+//   }
+// `
 
 export const Button2 = styled.button`
   width: 115px;
@@ -126,7 +126,7 @@ export const Button2 = styled.button`
   font-size: 16px;
   line-height: 24px;
   border: none;
-`;
+`
 
 export const ProfileNav = styled.div`
   width: 40px;
@@ -150,7 +150,7 @@ export const ProfileNav = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     display: none;
   }
-`;
+`
 
 
 export const ProfileMenu = styled.div`

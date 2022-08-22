@@ -14,7 +14,7 @@ function Restaurant() {
       </div>
       {state?.map((category) => (
 
-
+<div>
 
           <Image width="25" height="28" src={`/restaurant/category${category.image}`} />
 
@@ -26,8 +26,8 @@ function Restaurant() {
 
           <p className="type">{category.name}</p>
         </div>
-        </div>
-      ))}
+    </div>
+     ))}
     </div>
   );
 }

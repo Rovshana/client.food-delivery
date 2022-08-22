@@ -17,14 +17,11 @@
 
 
         "count": 1, 
-        "stock": 8
+        "stock": 8,
         "image": "burger.svg "
 
 
-        "count": 1,
-        "stock": 8,
-        "image": "burger.jpg"
-
+    
       },
       {
         "id": 2,

@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
-        <ToastContainer
+        {/* <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }) {
           pauseOnHover
         />
         {/* Same as */}
-        <ToastContainer />
+        {/* <ToastContainer /> */} 
       </Provider>
     </>
   );
