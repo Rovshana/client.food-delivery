@@ -97,7 +97,7 @@ export const BasketDiv = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     display: none;
   }
-`;
+`
 
 
 export const Button2 = styled.button`
@@ -112,7 +112,7 @@ export const Button2 = styled.button`
   font-size: 16px;
   line-height: 24px;
   border: none;
-`;
+`
 
 export const ProfileNav = styled.div`
   width: 40px;
@@ -136,7 +136,7 @@ export const ProfileNav = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     display: none;
   }
-`;
+`
 
 
 export const ProfileMenu = styled.div`

@@ -14,9 +14,11 @@
         "name": "Burger",
         "price": 7.9,
         "desc": "Prepared with a patty, a slice of cheese and special sauce",
+
         "count": 1,
         "stock": 8,
         "image": "burger.jpg"
+
       },
       {
         "id": 2,
