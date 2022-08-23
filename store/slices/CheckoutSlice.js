@@ -3,8 +3,10 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
  
 
-    personInfo:[],
-    products:[]
+    checkoutAddress:[
+      
+    ],
+    
   
 }
 
@@ -13,8 +15,8 @@ export const CheckoutSlice = createSlice({
   initialState,
   reducers: {
     setCheckout : (state,action)=>{
-        state.products = action.payload[0]
-        state.personInfo.push(action.payload[1])
+        state.checkoutAddress.push(action.payload)
+        
     },
   },
 })

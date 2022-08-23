@@ -11,7 +11,7 @@ import {useSelector, dispatch} from "react-redux"
  function Orders(props) {
     const [modalShow, setModalShow] = React.useState(false);
 const [showDeleteButton,setShowDeleteButton] = useState(false)
-const state = useSelector(state=>state.CheckoutSlice.personInfo)
+const state = useSelector(state=>state.CheckoutSlice.checkoutAddress)
 console.log(state)
 
     return (
