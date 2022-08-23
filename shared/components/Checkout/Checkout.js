@@ -14,9 +14,8 @@ import { setCheckout } from "../../../store/slices/CheckoutSlice";
 
 function Checkout(props) {
   const state = useSelector((state) => state.BasketSlices);
-  const state2 = useSelector((state) => state);
-  console.log(state2,"state2");
   const dispatch = useDispatch();
+  console.log(state);
   const changeRadioValue = (e) => {
     formik.values.cash = e.target.value;
   };
@@ -24,13 +23,22 @@ function Checkout(props) {
     initialValues: {
       deliveryAddress: "",
       contactNumber: "",
-      cash: "",
+      paymentMethod: "",
     },
     onSubmit: (values) => {
+      let newObj = {
+        id:Date.now(),
+        amount:state.result,
+        products:state.myBasket,
+        ...values
+      }
+
+      
       checkoutApi(values).then((res) => {
         if (res.status === 201) {
-          let arr = [state.myBasket, values];
-          dispatch(setCheckout(arr));
+      
+
+          dispatch(setCheckout(newObj));
           props.changeShow()
         }
       });
@@ -65,18 +73,18 @@ function Checkout(props) {
         <div className="orderRadio">
           <div className="checkoutForm">
             <InputRadio
-              id="cash"
-              name="cash"
+              id="paymentMethod"
+              name="paymentMethod"
               type="radio"
               onChange={(e) => changeRadioValue(e)}
               value="pay at the door"
             />
-            <LabelRadio htmlFor="cash">pay at the door</LabelRadio>
+            <LabelRadio htmlFor="paymentMethod">pay at the door</LabelRadio>
           </div>
           <div className="checkoutForm">
             <InputRadio
-              id="cash"
-              name="cash"
+              id="paymentMethod"
+              name="paymentMethod"
               type="radio"
               onChange={(e) => {
                 changeRadioValue(e);
@@ -84,7 +92,7 @@ function Checkout(props) {
               value="pay at the door by credit-cards"
             />
 
-            <LabelRadio htmlFor="card">
+            <LabelRadio htmlFor="paymentMethod">
               pay at the door by credit-cards
             </LabelRadio>
           </div>
