@@ -34,8 +34,9 @@ console.log(state)
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    <TableRow style={{position:"relative"}}>
-                        <TableCell className='ordersInfo'>1</TableCell>
+                    
+                            <TableRow style={{position:"relative"}}>
+                            <TableCell className='ordersInfo'>1</TableCell>
                         <TableCell  className='ordersInfo'>25 dec 2021</TableCell>
                         <TableCell  className='ordersInfo'>29 eve street,234 evenue, road</TableCell>
                         <TableCell  className='ordersInfo'>$288.80</TableCell>
@@ -49,6 +50,10 @@ console.log(state)
                      </div>
                        )}
                     </TableRow>
+                      
+                
+                    
+                    
                     <TableRow>
                         <TableCell className='ordersInfo'>1</TableCell>
                         <TableCell  className='ordersInfo'>25 dec 2021</TableCell>
