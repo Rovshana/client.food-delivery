@@ -27,12 +27,15 @@ const lngs = {
 };
 
 function Navbar(props) {
+
   const [profile,setProfile] = useState(false)
   const [hamburger, setHamburger] = useState(false);
   const [width, setWidth] = useState(0);
   const [myLocal, setMyLocal] = useState("");
+  // const [deleteLocal, setDeleteLocal] = useState();
   useEffect(() => {
     setMyLocal(window.localStorage.getItem("user"));
+    // setDeleteLocal(window);
     setWidth(window.innerWidth);
   }, []);
   const [isOpen, setIsOpen] = useState(false);
@@ -45,12 +48,11 @@ function Navbar(props) {
       .filter((item) => myArr.push(item.charAt(0).toUpperCase()));
     return myArr;
   };
-  // router
   const route = useRouter();
-
- 
   const state = useSelector((state) => state.BasketSlices.myBasket);
-
+// const deleteUser = ()=>{
+//   deleteLocal.localStorage.removeItem("user")
+// }
 
   return (
     <>
@@ -63,14 +65,14 @@ function Navbar(props) {
           />
         )}
         <div>
-          <img src="/foody.svg" alt=".." />
+          <img src="/foody.svg" alt=".."  onClick={() => route.push("/")}/>
         </div>
         <Ul hamburger={hamburger}>
           {width < 576 && (
             <>
             <img src="/cancel.svg" alt="" onClick={() => setHamburger(false)} />
             {!myLocal ? (
-            <Button2>Sign up</Button2>
+            <Button2>{t("form.signup")}</Button2>
           ) : (
         <div style={{marginBottom:"15px", display: 'flex',justifyContent: 'space-around',alignItems: 'center'}}>
         <img src="/avatar.svg" alt=""/>
@@ -83,34 +85,34 @@ function Navbar(props) {
           )}
           
         
-          <ListLi onClick={() => route.push("/")}>Home</ListLi>
+          <ListLi onClick={() => route.push("/")}>{t("menu.home")}</ListLi>
           <ListLi onClick={() => route.push("/restaurants")}>
-            Restaurants
+          {t("menu.restaurants")}
           </ListLi>
-          <ListLi onClick={() => route.push("/about")}>About us</ListLi>
+          <ListLi onClick={() => route.push("/about")}>{t("menu.about us")}</ListLi>
           <ListLi onClick={() => route.push("/howitworks")}>
-            How it works
+          {t("menu.how it works")}
           </ListLi>
          {(myLocal && width < 576) && (
           <>
-           <ListLi onClick={() => route.push("/howitworks")}>
-            Profile
+           <ListLi onClick={() => route.push("/profile")}>
+           {t("menu.profile")}
           </ListLi>
-          <ListLi onClick={() => route.push("/howitworks")}>
-            Your Basket
+          <ListLi onClick={() => route.push("/basket")}>
+          {t("menu.basket")}
           </ListLi>
-          <ListLi onClick={() => route.push("/howitworks")}>
-            Your Orders
+          <ListLi onClick={() => route.push("/orders")}>
+          {t("menu.orders")}
           </ListLi>
-          <ListLi onClick={() => route.push("/howitworks")}>
-            Chekcout
+          <ListLi onClick={() => route.push("/checkout")}>
+          {t("menu.checkout")}
           </ListLi>
         
           </>
          )}
-          <ListLi onClick={() => route.push("/faqs")}>FAQs </ListLi>
+          <ListLi onClick={() => route.push("/faqs")}>{t("menu.faqs")}</ListLi>
           {(myLocal && width < 576) && (
-            <ListLi Logout onClick={() => route.push("/faqs")}>Logout </ListLi>
+            <ListLi Logout onClick={() => route.push("/faqs")}> {t("menu.faqs")}</ListLi>
           )}
 
         </Ul>
@@ -136,7 +138,7 @@ function Navbar(props) {
             </DropdownMenu>
           </Dropdown>
           {myLocal && (
-            <BasketDiv>
+            <BasketDiv onClick={()=>route.push("/basket")}>
 
               <span>{state.length}</span>
               <img src="/login/sebet.svg" />
@@ -145,7 +147,7 @@ function Navbar(props) {
 
 
           {!myLocal && width > 576 ? (
-            <Button2>Sign up</Button2>
+            <Button2>{t("form.signup")}</Button2>
           ) : (
             <>
             <ProfileNav onClick={() => setProfile(!profile)}>
@@ -155,11 +157,11 @@ function Navbar(props) {
               <ProfileMenu>
 
 
-              <p onClick={()=>route.push("/profile")}>Profile</p>
-              <p onClick={()=>route.push("/basket")}> Your Basket</p>
-              <p onClick={()=>route.push('/orders')}>Your Orders</p>
-              <p  onClick={()=>route.push('/checkout')}>Checkout</p>
-              <p onClick={()=>route.push("/logout")}>Logout</p>
+              <p onClick={()=>route.push("/profile")}>{t("menu.profile")}</p>
+              <p onClick={()=>route.push("/basket")}> {t("menu.basket")}</p>
+              <p onClick={()=>route.push('/orders')}>{t("menu.orders")}</p>
+              <p  onClick={()=>route.push('/checkout')}>{t("menu.checkout")}</p>
+              {/* <p onClick={()=>deleteUser}>Logout</p> */}
 
             </ProfileMenu>
           )}

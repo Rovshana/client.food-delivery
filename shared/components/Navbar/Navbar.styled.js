@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 
   /* width: 86%; */
   height: 120px;
@@ -60,6 +61,7 @@ export const ListLi = styled.li`
   line-height: 24px;
   color: #828282;
   margin-right: 15px;
+  cursor: pointer;
   &:hover {
     color: #d63626;
   }

@@ -8,7 +8,9 @@ import { usersApi, usersPostApi } from "../../../../api/login";
 import { loginHandle } from "../../../../store/slices/LoginSlices";
 import { register } from "../../../../firebase.js";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 function FormDiv({ value }) {
+  const { t}  = useTranslation();
   const route = useRouter();
   const dispatch = useDispatch();
   const [show, setShow] = useState(true);
@@ -47,7 +49,7 @@ function FormDiv({ value }) {
   return (
     <MyFrom onSubmit={formik.handleSubmit}>
       <div className="form-group mb-3">
-        <label htmlFor="fullname">Full Name</label>
+        <label htmlFor="fullname">{t("form.fullName")}</label>
         <input
           id="fullname"
           name="fullname"
@@ -59,7 +61,7 @@ function FormDiv({ value }) {
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="username">User Name</label>
+        <label htmlFor="username">{t("form.username")}</label>
         <input
           id="username"
           name="username"
@@ -74,7 +76,7 @@ function FormDiv({ value }) {
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">{t("form.email")}</label>
         <input
           id="email"
           name="email"
@@ -89,7 +91,7 @@ function FormDiv({ value }) {
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">{t("form.password")}</label>
         <input
           id="password"
           name="password"
@@ -107,7 +109,7 @@ function FormDiv({ value }) {
         />
       </div>
 
-      <button type="submit">Register</button>
+      <button type="submit">{t("form.register")}</button>
     </MyFrom>
   );
 }

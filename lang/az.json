@@ -1,52 +1,43 @@
 {
   "translation": {
-    "airport title": "Nakhchivan International Airport",
     "menu": {
-      "about": "Haqqımızda",
-      "passengerFor": "For passengers",
-      "cargo": "cargo transportation",
-      "Services": "Services",
-      "aboutNakhchivan": "About Nakhchivan",
-      "General Information":"General Information",
-      "history": "History",
-      "prospects" : "Development prospects",
-      "Technical data":"Technical Data",
-      "Flight safety":"Flight Safety",
-      "Certificates":"Certificates",
-      "Flight schedule":"Flight schedule",
-      "Ticket sales points":"Ticket sales points",
-      "Rules":"Rules",
-      "vipServices":"Vip Services",
-      "Mobile services":"Mobile Services",
-      "Contact information":"Contact information",
-      "Historical monuments":"Historical Monuments"
-
+      "home": "Əsas",
+      "restaurants": "Restoranlar",
+      "about us": "Haqqımızda",
+      "how it works": "Necə işləyirik",
+      "faqs": "FAQ's",
+      "profile": "Profil",
+      "basket": "Sənin Səbətin",
+      "orders": "Sifarişləriniz",
+      "checkout": "Ödəniş",
+      "login": "Çıxış"
     },
-    "ticketSales": {
-      "return": "Return",
-      "oneWay": "One Way",
-      "from": "From",
-      "to": "To",
-      "departure": "Departure",
-      "class": "Class",
-      "passengers": "Passengers"
+    "form": {
+      "fullName": "Ad Soyad",
+      "email": "E-poçt",
+      "password": "Şifrə",
+      "username": "İstifadəçi adı",
+      "login": "Daxil ol",
+      "signup": "Qeydiyyat",
+      "register": "Qeydiyyatdan keç"
     },
-    "registration": "Registration",
-    "managment": "Reservation Management",
-    "table": "Table",
-    "status": "Flight status",
-    "hotelReserv": "Hotel reservation",
-    "auto": "Car rental",
-    "taksi": "Taxi Service",
-    "publicTransport": "Public transport",
-    "news": "News",
-    "more": "Read More",
-    "photoGallery":"Photo gallery",
-    "videoGallery":"Video gallery",
-    "turizim" : "Nakhchivan Turizm",
-    "RecreationCenters" :"Recreation Centers",
-    "Museums":"Museums",
-    "Tourist places":"Tourist Places",
-    "hotels":"Hotels"
+    "common": {
+      "header title": "Bizim Qida saytimiz yerli yeməkləri tapmaği asanlaşdirir",
+      "header desc": "Lorem ipsum qrafika, çap və nəşriyyat sənayesində tərtibat və vizual maketləri önizləmək üçün geniş istifadə olunan yer tutucu mətndir.",
+      "order_now": "İndi sifariş et ",
+      "sign_up": "Qeydiyyat",
+      "stock": "Məhsul stockda daha yoxdur",
+      "faq1": "Ümumi parametrlər",
+      "faq2": "Siz hazırda sahib deyilsiniz",
+      "faq3": "Qabaqcıl parametrlər",
+      "faq4": "Şəxsi məlumatlar",
+      "faqDesc1": "Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros, vitae egestas augue. Duis vel est augue.",
+      "features": "Xüsusiyyətlər",
+      "basket empty": "Opps! Səbət boşdur",
+      "features desc": "Lorem ipsum qrafikdə çox istifadə olunan yertutandır",
+      "out popular": "Bizim Populyar Güncəlləmə Yeni Yeməklərimiz",
+      "how it works": "Necə işləyirik",
+      "how it works desc": "Çatdırılma satış müddətləri ərzində uzadıla bilər. Zəhmət olmasa, yerinizə dair yenilənmiş təxmin üçün ödəniş səhifəsinə baxın. Nəzərə alın ki, sifariş verdikdən sonra sifarişinizi dəyişdirmək artıq mümkün deyil. Vergilər və rüsumlar bütün məhsul qiymətlərinə daxildir.Kredit kartı ilə ödəniş edərkən evinizdən və ya faktura ünvanınızdan fərqli ünvana çatdırılma ilə sifariş vermək mümkündür.Nəzərinizə çatdıraq ki, Klarna ödənişləri sifarişinizin qeydiyyatda olduğunuz ünvana göndərilməsini tələb edir."
+    }
   }
 }

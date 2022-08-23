@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   ChildBox,
   Para,
@@ -10,13 +11,13 @@ import {
 } from "./Cards.styled";
 
 function Cards(props) {
+  const {t} = useTranslation();
   return (
     <div className="container ">
       <div>
-        <Title>Features</Title>
+        <Title>{t("common.features")}</Title>
         <Para>
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
+        {t("common.features desc")}
         </Para>
       </div>
       <ParentDiv className="row">
