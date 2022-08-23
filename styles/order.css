@@ -1,64 +1,62 @@
-.orderContainer{
-    background: #F3F4F6;
-border-radius: 5px;
-height: 500px;
-margin-bottom: 50px;
+.orderContainer {
+  background: #f3f4f6;
+  border-radius: 5px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+.orderTable {
+  padding-top: 20px;
+}
+.ordersTitle {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  padding-top: 30px;
+  color: #4f4f4f;
+}
+.ordersTablecell {
+  font-family: "Open Sans" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
 
-}
-.orderTable{
-    padding-top: 20px;
-}
-.ordersTitle{
-    font-family: 'Mukta';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-padding-top: 30px;
-color: #4F4F4F;
-}
-.ordersTablecell{
-    font-family: 'Open Sans' sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-
-color: #00072B;
-}
-
-.ordersInfo{
-    font-family: 'Open Sans' sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-}
-.MuiSvgIcon-root{
-   color: #828282;
+  color: #00072b;
 }
 
-.ShowDeleteBtn{
-position: absolute;
-bottom: -55px;
-right: 0;
-display: flex;
-flex-direction: column;
-background: #FFFFFF;
-box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
-
+.ordersInfo {
+  font-family: "Open Sans" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
-.ShowDeleteBtn button:first-child{
-    color: #6FCF97;
-    font-family: 'Roboto'sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-    border: none;
-
+.MuiSvgIcon-root {
+  color: #828282;
 }
 
-.ShowDeleteBtn button:last-child{
-    color: #EB5757;
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-    border: none;
+.ShowDeleteBtn {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background: red;
+  box-shadow: 0px 3px 8px -2px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+.ShowDeleteBtn button:first-child {
+  color: #6fcf97;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+}
+
+.ShowDeleteBtn button:last-child {
+  color: #eb5757;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
 }

@@ -4,6 +4,7 @@ import {TableContainer, Table, TableHead, TableRow, TableCell, Paper, TableBody}
 
 
 function MyModal(props) {
+  console.log(props);
     return (
       <Modal
         {...props}
@@ -29,20 +30,16 @@ function MyModal(props) {
                     </TableRow>  
                 </TableHead>
                 <TableBody>
-                    <TableRow>
-                        <TableCell><img src='/orders/pizza.svg' alt='..'/></TableCell>
-                        <TableCell className='ordersInfo'>Papa John’s Pizza</TableCell>
-                        <TableCell className='ordersInfo'>7.90</TableCell>
-                        <TableCell className='ordersInfo'>2</TableCell>
-                        <TableCell className='ordersInfo'>15.80</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell><img src='/orders/coffee.svg' alt='..'/></TableCell>
-                        <TableCell className='ordersInfo'>Coffee</TableCell>
-                        <TableCell className='ordersInfo'>1.10</TableCell>
-                        <TableCell className='ordersInfo'>3</TableCell>
-                        <TableCell className='ordersInfo'>3.30</TableCell>
-                    </TableRow>
+                  {props.data?.map(item=>(
+                      <TableRow key={item.id}>
+                      <TableCell><img width="25px" height="25px"src={`/restaurant/${item.image}`} alt={`/restaurant/${item.image}`}/></TableCell>
+                      <TableCell className='ordersInfo'>{item.name}</TableCell>
+                      <TableCell className='ordersInfo'>{item.price}</TableCell>
+                      <TableCell className='ordersInfo'>{item.count}</TableCell>
+                      <TableCell className='ordersInfo'>{item.count  * item.price}</TableCell>
+                  </TableRow>
+               
+                  ))}
                 </TableBody>
                 </Table>
 

@@ -21,7 +21,7 @@ import "../styles/checkout.css";
 import "../styles/order.css";
 import "../styles/homefirst.scss";
 import "../styles/about.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import "../i18n";
 import Layout from "../features/Layout/Layout";
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
-        {/* <ToastContainer
+        <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -45,8 +45,7 @@ function MyApp({ Component, pageProps }) {
           draggable
           pauseOnHover
         />
-        {/* Same as */}
-        {/* <ToastContainer /> */} 
+        <ToastContainer />
       </Provider>
     </>
   );

@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 function FormDiv({ value }) {
   const route = useRouter();
   const [t] = useTranslation()
-
+  const dispatch = useDispatch();
   const [show, setShow] = useState(true);
   const formik = useFormik({
     initialValues: {
@@ -20,7 +20,7 @@ function FormDiv({ value }) {
       password: "",
     },
     onSubmit: async (values) => {
-
+console.log(values);
       const user = await login(values.email,values.password);
       if (user) {
         dispatch(loginHandle({user,values}));
