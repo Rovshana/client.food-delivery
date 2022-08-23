@@ -14,7 +14,9 @@ import FormDivLogin from "./FormDivLogin";
 import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import { useTranslation } from "react-i18next";
 function LoginBody() {
+  const [t] = useTranslation()
   const [image,Setimage] = useState();
   const handleChange = ()=>{
 
@@ -42,10 +44,10 @@ function LoginBody() {
             id="uncontrolled-tab-example"
             className="mb-3"
           >
-            <Tab onClick={handleChange} eventKey="login" title="Login">
+            <Tab onClick={handleChange} eventKey="login" title={t("form.login")}>
               <FormDivLogin/>
             </Tab>
-            <Tab eventKey="register" title="Register">
+            <Tab eventKey="register" title={t("form.register")}>
               <FormDivRegister/>
             </Tab>
           </Tabs>

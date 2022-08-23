@@ -17,11 +17,10 @@ return setSelected(null)
         <div className="accordian">
           {
             data.map((item, i)=>(
-              <div className="item">
+              <div className="item" key={i}>
                 <div className="titleAccordian" onClick={()=>toggle(i)}>
                   <h2 className='question'>{item.question}</h2>
-                  {/* <span className='plusMinus'>{selected == i? '-' : '+'}</span> */}
-                  <img src={`${ selected == i ? "/icons/minus.svg" : "/icons/plus.svg"}`} alt="." />
+                  <img src={`${ selected == i ? "/icons/minus.svg" : "/icons/plus.svg"}`} alt="" />
                 </div>
                 <div className={selected == i ? 'contentAccordian show' : 'contentAccordian'}>
                   <p>{item.answer}</p>

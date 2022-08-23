@@ -46,6 +46,11 @@ height: 184px;
 .imgDiv{
     margin-top: 40px;
 
+
+}
+.imgDiv img {
+    display: block;
+    margin: 0 auto;
 }
 .contentDiv{
     margin-top: 74px;
