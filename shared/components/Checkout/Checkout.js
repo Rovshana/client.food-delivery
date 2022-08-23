@@ -15,7 +15,6 @@ import { setCheckout } from "../../../store/slices/CheckoutSlice";
 function Checkout(props) {
   const state = useSelector((state) => state.BasketSlices);
   const dispatch = useDispatch();
-  console.log(state);
   const changeRadioValue = (e) => {
     formik.values.cash = e.target.value;
   };
@@ -26,8 +25,12 @@ function Checkout(props) {
       paymentMethod: "",
     },
     onSubmit: (values) => {
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let date = new Date()
+      let fullDate = date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + date.getDate()
       let newObj = {
         id:Date.now(),
+        date:fullDate,
         amount:state.result,
         products:state.myBasket,
         ...values
