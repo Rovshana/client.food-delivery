@@ -28,7 +28,7 @@ setModalShow(true)
 }
 
   return (
-    <div className=" container orderContainer">
+    <div className=" container orderContainer ordersMobile">
       <h2 className="ordersTitle">Your Orders</h2>
       <div className="orderTable">
         <TableContainer component={Paper}>

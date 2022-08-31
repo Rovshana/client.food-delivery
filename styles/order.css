@@ -60,3 +60,19 @@
   font-size: 14px;
   border: none;
 }
+@media screen and (min-width: 320px)  and (max-width: 576px){
+  /* .ordersMobile{
+    
+    margin: 0 auto!important;
+    margin-right: 60px;
+    background: none;
+    } */
+
+    .d-flex {
+      flex-direction: column !important;
+    }
+    .col-9 {
+      width: 100% !important
+    }
+  
+}

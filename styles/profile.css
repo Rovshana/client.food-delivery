@@ -24,6 +24,7 @@ padding-top: 45px;
 @media screen and  (min-width: 320px) and (max-width: 576px){
    .profileSidebarMobile{
     display: none;
+    margin-left: 20px;
    } 
     
 }

@@ -7,7 +7,6 @@ export const Header = styled.header`
   border-radius: 4px;
   margin-bottom: 81px;
   height: 838px;
-  padding-top: 50px;
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     margin-left: 0;
   margin-right: 0;
@@ -24,9 +23,10 @@ export const Title = styled.h1`
   color: #181617;
   font-weight: 900;
   font-size: 55px;
-  line-height: 70px;
-  margin-bottom: 5px;
-  letter-spacing: 0.03em;
+  
+  margin-bottom: 15px;
+  
+ 
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     width: 279px;
     height: 90px;
@@ -44,6 +44,10 @@ export const Content = styled.p`
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
+  margin-bottom: 42px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
   color: #828282;
   @media only screen and (min-width: 320px) and (max-width: 576px) {
     display: none;
