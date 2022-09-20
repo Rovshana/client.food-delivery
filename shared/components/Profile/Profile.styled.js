@@ -9,6 +9,8 @@ font-weight: 600;
 font-size: 30px;
 color: #4F4F4F;
 padding-bottom: 30px;
+
+
  `
 export const Label = styled.label`
 color: #4F4F4F;
@@ -18,6 +20,18 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 /* line-height: 24px; */
+`
+export const LabelEmail = styled.label`
+color: #4F4F4F;
+display: flex;
+font-family: 'Mukta';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+padding-top: 75px;
+@media screen and (min-width: 320px)  and (max-width: 576px){
+    padding-top: 0px;
+}
 `
 
 export const Form = styled.form`

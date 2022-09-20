@@ -1,8 +1,20 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import { ContentMenu, ParentDiv, Title, PhotoDiv, ContentDiv, Box } from "./Menu.styled";
 import Image from "next/image";
+import { menuApi } from "../../../api/menu";
 
 function Menu(props) {
+  const [state, setState] = useState(null)
+  useEffect(() => {
+  getMenu()
+  }, [])
+
+  const getMenu = ()=>{
+    menuApi.then(res =>{
+      console.log(res.data.menu)
+      setState(res.data.menu)
+    })
+  }
   return (
     <Box>
       <ParentDiv>
@@ -17,7 +29,7 @@ function Menu(props) {
           </ContentMenu>
         </ContentDiv>
         <PhotoDiv>
-          <Image width={413} height={530} src="/menu/menu1.svg" alt=".."  />
+          <Image width={413} height={530} src={`/menu/" `} alt=".."  />
         </PhotoDiv>
       </ParentDiv>
       <ParentDiv>
