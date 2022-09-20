@@ -9,24 +9,24 @@ import {useRouter} from 'next/router'
         <>
         <div className='profileSidebar profileSidebarMobile'>
             <div className='myDiv'>
-                <Image width='22' height='14' src='/profile/profile.svg' alt='...'/>
-                <p className='paragraph' onClick={()=>route.push("/profile")}>Profile</p>
+                <Image width='22' height='14' src='/profile/profile.svg' alt='...' className='profilePhoto'/>
+                <p className='Profileparagraph' onClick={()=>route.push("/profile")}>Profile</p>
             </div>
             <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p  className='paragraph' onClick={()=>route.push("/basket")}>Your basket</p>
+                <p  className='Profileparagraph' onClick={()=>route.push("/basket")}>Your basket</p>
             </div>
             <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p  className='paragraph'onClick={()=>route.push("/orders")} >Your Orders</p>
+                <p  className='Profileparagraph'onClick={()=>route.push("/orders")} >Your Orders</p>
             </div>
             <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p  className='paragraph' onClick={()=>route.push("/checkout")}>Checkout</p>
+                <p  className='Profileparagraph' onClick={()=>route.push("/checkout")}>Checkout</p>
             </div>
             <div className='myDiv'>
                 <Image width='22' height='18' src='/profile/basket.svg' alt='...'/>
-                <p  className='paragraph' onClick={()=>route.push("/logout")}>Logout</p>
+                <p  className='Profileparagraph' onClick={()=>route.push("/logout")}>Logout</p>
             </div>
         </div>
             

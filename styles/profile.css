@@ -32,17 +32,15 @@ padding-top: 45px;
 .myDiv{
     display: flex;
     flex-direction: row;
-    margin-left: 38px;
-    width: 233px;
+    padding-left: 15px;
+   width: 200px;
     align-items: center;
-   
-    
+    margin-left: 39px;
 }
 .myDiv:hover{
     background-color: rgba(214, 54, 38, 0.1);
-
 }
-.paragraph{
+.Profileparagraph{
     padding-top: 15px;
     margin-left: 13px;
     font-family: "Mutka" sans-serif;
@@ -51,8 +49,9 @@ font-weight: 600;
 font-size: 20px;
 line-height: 24px;
 color: #828282;
+cursor: pointer;
 }
-.paragraph:hover{
+.Profileparagraph:link{
     color: #D63626 !important;
 }
 
@@ -61,3 +60,8 @@ formik */
 .input{
     border: #D63626;
     }
+.profilePhoto{
+    padding-left: 40px;
+    
+    
+}
